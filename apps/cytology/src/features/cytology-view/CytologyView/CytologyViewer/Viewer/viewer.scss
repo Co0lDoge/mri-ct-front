@@ -1,0 +1,91 @@
+.viewer-wrapper {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+.viewer-wrapper .medml-uzi-viewer {
+	width: 100%;
+	height: 100% !important;
+}
+
+.cytology-segment-popup {
+	position: absolute;
+	z-index: 20;
+	max-width: 350px;
+}
+
+.viewer-navigation {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	z-index: 999;
+	opacity: 0;
+	transition: opacity 0.3s ease-in-out;
+}
+
+.viewer-navigation button {
+	outline: none;
+	border: none;
+	background: inherit;
+	cursor: pointer;
+	border-radius: 25px;
+	padding: 10px;
+}
+
+.viewer-navigation:hover {
+	opacity: 1;
+}
+
+.viewer-navigation button:hover {
+	background: #cfcfcf;
+}
+
+.right {
+	bottom: 10px;
+	right: 10px;
+}
+
+.left {
+	bottom: 10px;
+	left: 10px;
+}
+
+.top-center-label {
+	top: 10px;
+	justify-content: center;
+	align-items: start;
+}
+
+.top-center-label p {
+	background: #cecece;
+	padding: 2px 5px;
+	border-radius: 5px;
+}
+
+.disable-show {
+	opacity: 0.4;
+	transition: none;
+}
+
+.disable-show:hover {
+	background: inherit;
+}
+
+:root {
+	--stroke-color: #00000073;
+	--filter: '';
+}
+
+.a9s-handle {
+	rx: 50% !important;
+	stroke: var(--stroke-color, #00000073) !important;
+	filter: var(--filter, '') !important;
+}
+
+// .a9s-annotationlayer {
+//     width: unset !important;
+// }

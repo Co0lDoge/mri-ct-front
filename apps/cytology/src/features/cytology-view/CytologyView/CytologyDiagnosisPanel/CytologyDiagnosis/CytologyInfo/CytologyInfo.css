@@ -1,0 +1,117 @@
+.cytology-info {
+  flex-shrink: 0;
+}
+
+.cytology-info--banner {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+  gap: 24px;
+  align-items: start;
+}
+
+.cytology-info-empty {
+  padding: 8px 0;
+  text-align: center;
+}
+
+.cytology-info-descriptions .ant-descriptions-item-label {
+  color: rgba(0, 0, 0, 0.45);
+}
+
+.cytology-info-descriptions .ant-descriptions-item-content {
+  color: rgba(0, 0, 0, 0.88);
+  font-weight: 500;
+}
+
+.cytology-info--banner .cytology-info-descriptions .ant-descriptions-item {
+  padding-bottom: 8px;
+}
+
+.cytology-info-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.cytology-info-actions--row {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.cytology-info-action {
+  width: 100%;
+  border: 1px solid #f0f0f0;
+  border-radius: 10px;
+  background: #fafafa;
+  padding: 10px 12px;
+  cursor: pointer;
+  text-align: left;
+  transition:
+    border-color 0.2s ease,
+    background-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.cytology-info-action:hover {
+  border-color: #91caff;
+  background: #f0f7ff;
+  box-shadow: 0 2px 8px rgba(22, 119, 255, 0.08);
+}
+
+.cytology-info-action-label {
+  display: block;
+  font-size: 12px;
+  margin-bottom: 2px;
+}
+
+.cytology-info-action-value {
+  font-size: 14px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.88);
+  line-height: 1.4;
+}
+
+.cytology-info-action-chevron {
+  color: rgba(0, 0, 0, 0.25);
+  font-size: 12px;
+}
+
+.cytology-info-action--disabled,
+.cytology-info-action:disabled {
+  cursor: default;
+  background: #fafafa;
+  border-color: #f0f0f0;
+  box-shadow: none;
+}
+
+.cytology-info-action--disabled:hover,
+.cytology-info-action:disabled:hover {
+  border-color: #f0f0f0;
+  background: #fafafa;
+  box-shadow: none;
+}
+
+.cytology-info-action--disabled .cytology-info-action-value,
+.cytology-info-action:disabled .cytology-info-action-value {
+  font-weight: 400;
+}
+
+.cytology-empty-value {
+  font-weight: 400 !important;
+}
+
+.cytology-info-action:hover .cytology-info-action-chevron {
+  color: #1677ff;
+}
+
+@media (max-width: 960px) {
+  .cytology-info--banner {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .cytology-info-actions--row {
+    grid-template-columns: 1fr;
+  }
+}

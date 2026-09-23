@@ -1,0 +1,84 @@
+@use './tokens' as *;
+
+.upload-page {
+	&__dropzone.ant-upload-wrapper {
+		display: flex;
+		flex: 1;
+		flex-direction: column;
+		min-height: 0;
+	}
+
+	&__dropzone .ant-upload-drag {
+		height: auto;
+		flex: 1;
+		min-height: 260px;
+
+		background: $color-info-bg;
+		border: 2px dashed $color-cyan;
+		border-radius: $radius-lg;
+		padding: $spacing-2xl;
+		transition:
+			border-color 0.2s ease,
+			background-color 0.2s ease;
+
+		&:hover {
+			border-color: $color-blue;
+			background: $color-bg-layout;
+		}
+	}
+
+	&__dropzone .ant-upload-list {
+		flex: 0 0 auto;
+		margin-top: $spacing-md;
+	}
+
+	.ant-upload-drag-icon {
+		margin-bottom: $spacing-md;
+
+		.anticon {
+			color: $color-cyan;
+			font-size: 32px;
+		}
+	}
+
+	.ant-upload-text {
+		font-family: $font-family-ui;
+		font-size: $font-size-body;
+		font-weight: $font-weight-semibold;
+		color: $color-text-primary;
+	}
+
+	.ant-upload-hint {
+		font-family: $font-family-data;
+		font-size: 13px;
+		font-weight: $font-weight-medium;
+		color: $color-text-tertiary;
+	}
+
+	.ant-upload-list-item {
+		background: $color-bg-layout;
+		border-radius: $radius-md;
+		padding: $spacing-lg;
+		height: auto;
+	}
+
+	&__add-patient {
+		width: 100%;
+	}
+
+	@media (max-width: 576px) {
+		&__dropzone.ant-upload-wrapper {
+			flex: 0 0 auto;
+		}
+
+		&__dropzone .ant-upload-drag {
+			flex: 0 0 auto;
+			min-height: 160px;
+			padding: $spacing-lg;
+		}
+
+		.ant-upload-list-item {
+			padding: $spacing-md;
+		}
+	}
+}

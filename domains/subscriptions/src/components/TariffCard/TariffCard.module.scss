@@ -1,0 +1,70 @@
+/**
+ * TariffCard Styles
+ */
+
+.card {
+	cursor: pointer;
+	transition: all 0.3s ease;
+	border: 2px solid transparent;
+
+	&:hover {
+		border-color: #1890ff;
+		box-shadow: 0 4px 12px rgba(24, 144, 255, 0.15);
+	}
+
+	&.selected {
+		border-color: #1890ff;
+		background-color: #f6ffed;
+	}
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 1rem;
+
+	.ant-typography {
+		margin: 0;
+	}
+}
+
+.description {
+	color: #666;
+	margin-bottom: 1rem;
+	display: block;
+}
+
+.pricing {
+	font-size: 1.5rem;
+	font-weight: bold;
+	color: #1890ff;
+	margin-bottom: 1rem;
+}
+
+.features {
+	list-style: none;
+	padding: 0;
+	margin: 1rem 0;
+
+	li {
+		display: flex;
+		align-items: center;
+		margin-bottom: 0.5rem;
+
+		.anticon {
+			color: #52c41a;
+			margin-right: 0.5rem;
+		}
+	}
+}
+
+.selection {
+	display: flex;
+	justify-content: center;
+	margin-top: 1rem;
+}
+
+.selected {
+	// Additional styles for selected state
+}

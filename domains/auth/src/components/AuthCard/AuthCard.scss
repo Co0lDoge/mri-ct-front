@@ -1,0 +1,99 @@
+@use '@medml/ui/styles/tokens' as *;
+
+// Карточка авторизации по макету: белая, бордер slate-200, радиус 24,
+// паддинг 40, тень card. Ширина подобрана под поля 400px из макета.
+//
+// Радиус/тень/бордер могли бы прийти из темы antd, но здесь нужен свой
+// паддинг 40 (у остальных карточек — 24), поэтому заданы явно.
+.auth-card {
+	width: 100%;
+	max-width: 480px;
+
+	// Регистрация по макету — две колонки по 312 с гаттером 16 (640) плюс
+	// паддинги карточки 40×2. Логин остаётся узким, поэтому ширину
+	// расширяем только когда внутри форма регистрации.
+	&:has(.register-form) {
+		max-width: 720px;
+	}
+
+	background: $color-bg-container;
+	border: 1px solid $color-border;
+	border-radius: $radius-xl;
+	box-shadow: $shadow-card;
+
+	transition: border-color 0.3s ease, box-shadow 0.3s ease;
+
+	.ant-card-body {
+		padding: $spacing-3xl;
+	}
+
+	// На телефоне паддинг 48 съедал бы почти всю ширину формы.
+	@media (max-width: 576px) {
+		border-radius: $radius-lg;
+
+		.ant-card-body {
+			padding: $spacing-xl $spacing-lg;
+		}
+	}
+
+	&-content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 28px;
+	}
+
+	&-form {
+		width: 100%;
+	}
+
+	&-footer-container {
+		width: 100%;
+	}
+
+	&-footer {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: $spacing-sm;
+	}
+
+	&-footer-divider {
+		// Раньше подпись разделителя приходила из миксина text-secondary,
+		// который навешивал !important. Задаём напрямую.
+		.ant-divider-inner-text {
+			font-family: $font-family-ui;
+			font-size: $font-size-caption;
+			font-weight: $font-weight-medium;
+			color: $color-text-tertiary;
+		}
+	}
+
+	// Ошибка входа: подсветка бордером цвета статуса, без «свечения».
+	&.auth-card-error {
+		border-color: $color-error;
+		box-shadow: $shadow-card, 0 0 0 4px rgba(225, 29, 72, 0.12);
+	}
+}
+
+// Заголовок и подпись формы входа/регистрации.
+.auth-title {
+	margin: 0;
+	font-family: $font-family-ui;
+	font-size: 32px;
+	font-weight: $font-weight-bold;
+	letter-spacing: -0.64px;
+	line-height: 1.2;
+	text-align: center;
+	color: $color-text-primary;
+}
+
+.auth-subtitle {
+	margin: 0;
+	font-family: $font-family-ui;
+	font-size: $font-size-body-sm;
+	font-weight: $font-weight-regular;
+	text-align: center;
+	color: $color-text-secondary;
+}

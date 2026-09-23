@@ -1,0 +1,144 @@
+@use '@medml/ui/styles/tokens' as *;
+
+.app-bar {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: $spacing-xl;
+
+	height: $app-bar-height;
+	min-height: $app-bar-height;
+	padding: 0 $spacing-3xl;
+	box-sizing: border-box;
+
+	background: $color-bg-container;
+	border-bottom: 1px solid $color-border;
+
+	&__logo {
+		display: flex;
+		align-items: center;
+		flex-shrink: 0;
+	}
+
+	&__nav {
+		display: flex;
+		align-items: center;
+		gap: $spacing-sm;
+	}
+
+	&__nav-item {
+		display: flex;
+		align-items: center;
+		gap: $spacing-sm;
+
+		padding: 10px 18px;
+		border-radius: $radius-full;
+
+		font-family: $font-family-ui;
+		font-size: $font-size-body-sm;
+		font-weight: $font-weight-medium;
+		line-height: 1.2;
+		color: $slate-700;
+
+		transition:
+			background-color 0.15s ease,
+			color 0.15s ease;
+
+		&:hover {
+			background: $color-neutral-bg;
+			color: $color-text-primary;
+		}
+
+		&--active {
+			background: $color-navy;
+			color: $color-text-inverse;
+			font-weight: $font-weight-semibold;
+
+			&:hover {
+				background: $slate-800;
+				color: $color-text-inverse;
+			}
+		}
+	}
+
+	// Счётчик у пункта навигации
+	&__badge {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+
+		padding: 2px $spacing-sm;
+		border-radius: $radius-full;
+
+		background: $color-cyan;
+		color: $color-text-inverse;
+
+		font-family: $font-family-data;
+		font-size: 11px;
+		font-weight: $font-weight-semibold;
+		line-height: 1.2;
+	}
+
+	&__actions {
+		display: flex;
+		align-items: center;
+		gap: $spacing-md;
+		flex-shrink: 0;
+	}
+
+	// Инициалы врача.
+	&__avatar {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+
+		width: 32px;
+		height: 32px;
+		border-radius: $radius-full;
+
+		background: $color-neutral-bg;
+		color: $color-text-primary;
+
+		font-family: $font-family-ui;
+		font-size: $font-size-caption;
+		font-weight: $font-weight-semibold;
+		line-height: 1;
+		user-select: none;
+		flex-shrink: 0;
+	}
+
+	// Бургер — только на узких экранах, где навигация уезжает в Drawer.
+	&__burger {
+		display: none;
+	}
+
+	@media (max-width: 1200px) {
+		padding: 0 $spacing-xl;
+		gap: $spacing-lg;
+	}
+
+	@media (max-width: 900px) {
+		padding: 0 $spacing-lg;
+
+		&__nav {
+			display: none;
+		}
+
+		&__burger {
+			display: inline-flex;
+		}
+	}
+}
+
+.app-bar-drawer {
+	&__nav {
+		display: flex;
+		flex-direction: column;
+		gap: $spacing-xs;
+	}
+
+	.app-bar__nav-item {
+		justify-content: space-between;
+		border-radius: $radius-md;
+	}
+}

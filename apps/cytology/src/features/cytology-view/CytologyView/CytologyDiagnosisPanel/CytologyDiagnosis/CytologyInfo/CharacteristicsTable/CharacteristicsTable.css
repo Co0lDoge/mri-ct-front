@@ -1,0 +1,52 @@
+.characteristics-table .ant-table-thead > tr > th {
+    background-color: white !important;
+    font-size: 16px;
+    font-weight: bold;
+    border-bottom: 4px solid white !important;
+}
+
+.characteristics-table .ant-table-tbody > tr > td {
+    border-bottom: 4px solid white !important;
+    font-size: 16px;
+}
+
+.characteristics-table .ant-table-tbody > tr {
+    font-size: 16px;
+}
+
+.characteristics-table .ant-badge-status-text {
+    font-size: 16px !important;
+}
+
+.characteristics-table .row-normal {
+    background-color: white !important;
+}
+
+.characteristics-table .row-warning {
+    background-color: #ffe48b !important;
+}
+
+.characteristics-table .row-error {
+    background-color: #ffbeb8 !important;
+}
+
+.characteristics-table .row-normal:hover {
+    background-color: #f1eaea !important;
+}
+
+.characteristics-table .row-warning:hover {
+    background-color: #ecd483 !important;
+}
+
+.characteristics-table .row-error:hover {
+    background-color: #ebaca5 !important;
+}
+
+.characteristics-table .ant-badge-status-dot {
+    width: 10px !important;
+    height: 10px !important;
+}
+
+.characteristics-table .ant-table-column-sort {
+    background-color: inherit !important;
+}

@@ -1,0 +1,11 @@
+@use "./tokens" as *;
+
+// Secondary text style mixin
+@mixin text-secondary {
+  font-family: $font-family-secondary !important;
+  font-style: normal;
+  font-weight: $font-weight-semibold;
+  font-size: $font-size-medium !important;
+  line-height: $line-height-secondary !important;
+  color: $color-text-secondary-header !important;
+}

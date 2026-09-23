@@ -1,0 +1,30 @@
+@use '@medml/ui/styles/tokens' as *;
+
+// Экраны входа и регистрации по макетам «02 — Screens · SignIn / SignUp»:
+// карточка по центру экрана на фоне Medical Gray.
+//
+// Раньше центрирование делалось через `padding-left/right: 30%`, из-за чего
+// карточка «плавала» по ширине окна и не центрировалась по вертикали.
+.auth_pages {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	min-height: 100vh;
+	padding: $spacing-3xl $spacing-xl;
+	box-sizing: border-box;
+
+	background: $color-bg-layout;
+	font-family: $font-family-ui;
+
+	@media (max-width: 576px) {
+		align-items: flex-start;
+		padding: $spacing-xl $spacing-md;
+	}
+}
+
+.auth-redirect-hint {
+	margin: 0;
+	text-align: center;
+	color: $color-text-secondary;
+}

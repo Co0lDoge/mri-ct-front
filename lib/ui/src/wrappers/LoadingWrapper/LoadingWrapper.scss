@@ -1,0 +1,5 @@
+@use "../../styles/tokens" as *;
+
+.spinner {
+  z-index: $z-index-spinner;
+}

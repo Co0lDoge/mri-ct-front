@@ -1,0 +1,16 @@
+@use './tokens' as *;
+
+* {
+	font-family: $font-family-ui;
+}
+
+body {
+	color: $color-text-primary;
+	background-color: $color-bg-layout;
+}
+
+.numeric,
+.ant-statistic-content-value {
+	font-family: $font-family-data;
+	font-variant-numeric: tabular-nums;
+}

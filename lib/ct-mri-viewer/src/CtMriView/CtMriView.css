@@ -1,0 +1,15 @@
+.ct-mri-view {
+  width: 100%;
+}
+
+.ct-mri-viewer-wrapper {
+  min-height: 720px;
+  max-height: 1000px;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.ct-mri-diagnosis {
+  height: 100%;
+}

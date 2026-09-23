@@ -1,0 +1,101 @@
+@use '@medml/ui/styles/tokens' as *;
+
+// Список пациентов по макету «02 — Screens · Patients».
+//
+// Карточка, радиус и тень приходят из темы antd — здесь только то,
+// что темой не выражается: типографика шапки таблицы и строки.
+.patients-panel {
+	&__header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: $spacing-md;
+		flex-wrap: wrap;
+		min-height: 40px;
+	}
+
+	&__title {
+		margin: 0;
+		font-family: $font-family-ui;
+		font-size: $font-size-h4;
+		font-weight: $font-weight-bold;
+		letter-spacing: -0.24px;
+		line-height: 1.2;
+		color: $color-text-primary;
+	}
+
+	&__tools {
+		display: flex;
+		align-items: center;
+		gap: $spacing-md;
+	}
+
+	&__search {
+		width: 360px;
+		max-width: 100%;
+	}
+
+	// Планшет и уже: заголовок отдельной строкой, поиск на всю ширину,
+	// кнопка «Новый пациент» рядом с ним, а не за пределами экрана.
+	@media (max-width: 768px) {
+		&__header {
+			flex-direction: column;
+			align-items: stretch;
+			gap: $spacing-md;
+		}
+
+		&__title {
+			font-size: $font-size-h3;
+		}
+
+		&__tools {
+			flex-wrap: wrap;
+		}
+
+		&__search {
+			width: auto;
+			flex: 1 1 200px;
+		}
+	}
+
+	// Шапка таблицы: капс, 12/SemiBold, slate-500, разрядка 0.48.
+	.ant-table-thead > tr > th {
+		background: transparent;
+		border-bottom: 1px solid $color-border;
+
+		font-family: $font-family-ui;
+		font-size: $font-size-caption;
+		font-weight: $font-weight-semibold;
+		letter-spacing: 0.48px;
+		text-transform: uppercase;
+		color: $color-text-tertiary;
+	}
+
+	// Строки: разделитель slate-100, высота 54.
+	.ant-table-tbody > tr > td {
+		height: 54px;
+		border-bottom: 1px solid $color-neutral-bg;
+		font-family: $font-family-ui;
+		font-size: $font-size-body-sm;
+		color: $color-text-secondary;
+	}
+
+	&__patient-name {
+		font-weight: $font-weight-semibold;
+		color: $color-text-primary;
+	}
+
+	// Полис и дата — Inter: табулярные цифры не «пляшут» по строкам.
+	&__numeric {
+		font-family: $font-family-data;
+		font-variant-numeric: tabular-nums;
+		font-weight: $font-weight-medium;
+		color: $slate-700;
+	}
+
+	&__footer-total {
+		font-family: $font-family-ui;
+		font-size: 13px;
+		color: $color-text-tertiary;
+	}
+}

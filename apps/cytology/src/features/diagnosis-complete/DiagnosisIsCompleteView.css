@@ -1,0 +1,78 @@
+.diagnosis-complete-page {
+  padding: 24px;
+  max-width: 720px;
+  margin: 0 auto;
+  width: 100%;
+  min-height: calc(100vh - 120px);
+  display: flex;
+  align-items: center;
+}
+
+.diagnosis-complete-card {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+}
+
+.diagnosis-complete-content {
+  width: 100%;
+  padding: 32px 24px 28px;
+  align-items: center;
+  text-align: center;
+}
+
+.diagnosis-complete-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #f6ffed 0%, #d9f7be 100%);
+  color: #52c41a;
+  font-size: 42px;
+}
+
+.diagnosis-complete-text {
+  max-width: 520px;
+}
+
+.diagnosis-complete-title {
+  margin: 0 0 8px !important;
+  font-weight: 600 !important;
+}
+
+.diagnosis-complete-description {
+  margin: 0 !important;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.diagnosis-complete-details {
+  width: 100%;
+  max-width: 420px;
+  margin-top: 4px;
+  text-align: left;
+  background: #fafafa;
+  border-radius: 10px;
+  padding: 4px 8px;
+}
+
+.diagnosis-complete-details .ant-descriptions-item-label {
+  color: rgba(0, 0, 0, 0.45);
+}
+
+.diagnosis-complete-actions {
+  width: 100%;
+  max-width: 360px;
+  margin-top: 4px;
+}
+
+.diagnosis-complete-actions .ant-btn-primary {
+  height: 44px;
+  font-size: 16px;
+}
+
+.diagnosis-complete-secondary {
+  font-size: 14px;
+}

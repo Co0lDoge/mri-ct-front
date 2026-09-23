@@ -1,0 +1,71 @@
+.cytology-icons {
+  font-size: 30px;
+}
+
+.cytology-toolbox {
+  width: 50%;
+}
+
+.cytology-toolbox-hint {
+  font-size: 12px;
+  margin-bottom: 8px;
+}
+
+/* Панель инструментов сверху, снимок под ней на всю оставшуюся высоту. */
+.cytology-viewer-root {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+/* Высоту задаёт страница инлайном — она зависит от режима фокуса. */
+.cytology-viewer {
+  min-height: 0;
+  width: 100%;
+  align-self: stretch;
+}
+
+.cytology-viewer .viewer-wrapper {
+  flex: 1;
+  min-height: 0;
+  width: 100%;
+  height: 100%;
+  align-self: stretch;
+  position: relative;
+}
+
+.cytology-viewer .viewer-wrapper .medml-uzi-viewer,
+.cytology-viewer .viewer-wrapper .openseadragon-container {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.cytology-viewer-empty {
+  min-height: inherit;
+  padding: 48px 24px;
+  text-align: center;
+}
+
+.cytology-viewer-empty-icon {
+  font-size: 48px;
+  color: #bfbfbf;
+  margin-bottom: 12px;
+}
+
+.cytology-viewer-empty-text {
+  margin: 0 !important;
+  color: rgba(0, 0, 0, 0.45);
+}
+
+.viewer {
+  width: 200px;
+}
+
+.left {
+  margin-right: auto;
+}
+
+.right {
+  margin-left: auto;
+}

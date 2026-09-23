@@ -1,0 +1,68 @@
+@use '@medml/ui/styles/tokens' as *;
+
+// Экран входа по макету «02 — Screens · SignIn»:
+// знак, заголовок и подпись по центру, поля 400px, кнопка на всю ширину.
+.login-hero {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: $spacing-sm;
+	margin-bottom: 28px;
+}
+
+.login-logo {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: $spacing-xs;
+}
+
+.login-title {
+	margin: 0;
+	font-family: $font-family-ui;
+	font-size: 32px;
+	font-weight: $font-weight-bold;
+	letter-spacing: -0.64px;
+	line-height: 1.2;
+	text-align: center;
+	color: $color-text-primary;
+}
+
+.login-subtitle {
+	margin: 0;
+	font-family: $font-family-ui;
+	font-size: $font-size-body-sm;
+	font-weight: $font-weight-regular;
+	line-height: 1.4;
+	text-align: center;
+	color: $color-text-secondary;
+}
+
+.login-form {
+	width: 100%;
+
+	// Подписи полей: 13/Medium slate-700. Раньше задавались через !important
+	// с захардкоженным цветом — теперь через токены и точечный селектор.
+	.ant-form-item-label > label {
+		font-family: $font-family-ui;
+		font-size: 13px;
+		font-weight: $font-weight-medium;
+		color: $slate-700;
+	}
+}
+
+.login-forgot-password {
+	display: inline-block;
+	margin-top: $spacing-lg;
+
+	font-family: $font-family-ui;
+	font-size: $font-size-body-sm;
+	font-weight: $font-weight-semibold;
+	line-height: 1.2;
+	text-align: center;
+	color: $color-cyan;
+
+	&:hover {
+		color: $color-blue;
+	}
+}

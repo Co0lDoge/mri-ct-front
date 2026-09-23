@@ -1,0 +1,19 @@
+@use './tokens' as *;
+
+* {
+	font-family: $font-family-ui;
+}
+
+body {
+	color: $color-text-primary;
+	// По макету фон рабочих областей — Medical Gray (slate-50), карточки белые.
+	background-color: $color-bg-layout;
+}
+
+// Числа — Inter: у него табулярные цифры, поэтому столбцы значений
+// в таблицах и плитках метрик не «пляшут» при смене цифр.
+.numeric,
+.ant-statistic-content-value {
+	font-family: $font-family-data;
+	font-variant-numeric: tabular-nums;
+}

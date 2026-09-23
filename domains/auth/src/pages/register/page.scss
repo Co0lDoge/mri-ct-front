@@ -1,0 +1,60 @@
+@use '@medml/ui/styles/tokens' as *;
+
+// Экран регистрации по макету «02 — Screens · SignUp».
+// Заголовок/знак используют общие классы .login-* из ../login/page.scss.
+.register-form {
+	width: 100%;
+
+	// Подписи полей: 13/Medium slate-700.
+	.ant-form-item-label > label {
+		font-family: $font-family-ui;
+		font-size: 13px;
+		font-weight: $font-weight-medium;
+		color: $slate-700;
+
+		// Убираем обязательную звёздочку antd: в макете её нет.
+		&::before {
+			content: '';
+		}
+	}
+}
+
+.register-submit {
+	width: 100%;
+	height: 48px;
+}
+
+// Индикатор надёжности пароля.
+// Раньше каждое правило шло с !important и своими hex (#FFC108, #64C444),
+// не совпадавшими с палитрой. Теперь — токены статусов и обычные селекторы.
+.password-rules {
+	margin-bottom: $spacing-xl;
+
+	.ant-badge-status-text {
+		font-family: $font-family-ui;
+		font-size: $font-size-body-sm;
+		font-weight: $font-weight-regular;
+		line-height: 1.4;
+		color: $color-text-secondary;
+	}
+
+	// По умолчанию — пустой кружок с обводкой.
+	.ant-badge-status-dot.ant-badge-status-default {
+		width: 8px;
+		height: 8px;
+		background: transparent;
+		border: 1px solid $color-text-tertiary;
+	}
+
+	.ant-badge-status-dot.ant-badge-status-warning {
+		background: $color-warning;
+		border: none;
+		box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.18);
+	}
+
+	.ant-badge-status-dot.ant-badge-status-success {
+		background: $color-success;
+		border: none;
+		box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.18);
+	}
+}

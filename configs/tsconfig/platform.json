@@ -1,0 +1,30 @@
+{
+  "extends": "./base.json",
+  "compilerOptions": {
+    "noEmit": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "typeRoots": ["../../node_modules/@types"],
+    "paths": {
+      "@medml/ui": ["../../lib/ui/src"],
+      "@medml/ui/next": ["../../lib/ui/src/next.ts"],
+      "@medml/layout/next": ["../../domains/layout/src/next.ts"],
+      "@medml/auth/middleware": ["../../domains/auth/src/middleware/createAuthMiddleware.ts"],
+      "@medml/cytology-upload/next": ["../../lib/cytology-upload/src/next/index.ts"],
+      "@medml/store": ["../../lib/store/src"],
+      "@medml/shared": ["../../lib/shared/src"],
+      "@medml/viewers": ["../../lib/viewers/src"],
+      "@medml/ct-mri-viewer": ["../../lib/ct-mri-viewer/src"],
+      "@medml/cytology-upload": ["../../lib/cytology-upload/src"],
+      "@medml/config": ["../../lib/config"],
+      "@medml/patients": ["../../domains/patients/src"],
+      "@medml/patient_list": ["../../domains/patient_list/src"],
+      "@medml/patient_create": ["../../domains/patient_create/src"],
+      "@medml/patient_view": ["../../domains/patient_view/src"],
+      "@medml/auth": ["../../domains/auth/src"],
+      "@medml/layout": ["../../domains/layout/src"],
+      "@medml/cytology_upload": ["../../domains/cytology_upload/src"]
+    }
+  },
+  "exclude": ["node_modules", "dist", "build", "OLD-PROJECTS"]
+}

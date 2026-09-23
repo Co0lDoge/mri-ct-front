@@ -1,0 +1,208 @@
+@use '@/styles/tokens' as *;
+
+// Панель инструментов над снимком.
+.viewer-tool-panel {
+	display: flex;
+	flex-direction: column;
+	gap: $spacing-md;
+
+	padding: $spacing-md $spacing-lg;
+	margin-bottom: $spacing-md;
+
+	background: $color-bg-layout;
+	border: 1px solid $color-border;
+	border-radius: $radius-md;
+
+	&__row {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: $spacing-md;
+		flex-wrap: wrap;
+
+		&--secondary {
+			padding-top: $spacing-md;
+			border-top: 1px solid $color-border;
+		}
+	}
+
+	@media (max-width: 768px) {
+		padding: $spacing-md;
+
+		&__row {
+			align-items: stretch;
+		}
+	}
+}
+
+// ---------------------------------------------------------------------------
+// Переопределение дефолтов Annotorious.
+//
+// Плагин приносит собственные стили (`annotorious.min.css`) в духе
+// «серый бутстрап»: мелкие хэндлы, прямоугольные попапы, чужие шрифты.
+// Здесь они приводятся к токенам дизайн-системы.
+// ---------------------------------------------------------------------------
+
+// Хэндлы вершин контура: дефолтные ~5px, попасть по ним мышью тяжело,
+// а на сенсорном экране практически невозможно.
+.a9s-annotationlayer .a9s-handle {
+	// Увеличенные до 7px точки закрывали сам контур. Возвращаем компактный
+	// размер: попасть по-прежнему можно, но разметка читается.
+	.a9s-handle-outer {
+		r: 4.5;
+		stroke-width: 1.5;
+		stroke: rgba(15, 23, 42, 0.45);
+		fill: $color-bg-container;
+	}
+
+	.a9s-handle-inner {
+		r: 3.5;
+		stroke-width: 1.5;
+		stroke: $color-cyan;
+		fill: $color-bg-container;
+	}
+
+	&:hover .a9s-handle-inner {
+		fill: $color-info-bg;
+	}
+}
+
+// Выделенный контур.
+.a9s-annotationlayer .a9s-annotation {
+	&.selected .a9s-inner {
+		stroke-width: 3px;
+	}
+
+	.a9s-inner {
+		transition: stroke-width 0.12s ease;
+	}
+}
+
+// Слой линейки. Живёт в overlaySlot вьюера, а не внутри
+// `.a9s-annotationlayer`, поэтому селекторы здесь не вложенные.
+.ruler-layer {
+	// Подпись с расстоянием: белая, с тёмным контуром — читается и на
+	// светлых, и на тёмных участках снимка.
+	&__label {
+		font-family: $font-family-data;
+		font-size: 13px;
+		font-weight: $font-weight-semibold;
+		fill: #ffffff;
+		paint-order: stroke;
+		stroke: rgba(15, 23, 42, 0.85);
+		stroke-width: 3.5px;
+		stroke-linejoin: round;
+		pointer-events: none;
+		user-select: none;
+	}
+
+	// Подсказка у прицела — тем же приёмом, но мельче.
+	&__hint {
+		font-family: $font-family-ui;
+		font-size: 11px;
+		font-weight: $font-weight-medium;
+		fill: #ffffff;
+		paint-order: stroke;
+		stroke: rgba(15, 23, 42, 0.85);
+		stroke-width: 3px;
+		stroke-linejoin: round;
+		pointer-events: none;
+		user-select: none;
+	}
+
+	&__remove {
+		cursor: pointer;
+		pointer-events: auto;
+	}
+}
+
+// Всплывающая карточка редактирования аннотации.
+.r6o-editor,
+.a9s-popup {
+	font-family: $font-family-ui;
+
+	.r6o-editor-inner {
+		background: $color-bg-container;
+		border: 1px solid $color-border;
+		border-radius: $radius-md;
+		box-shadow: $shadow-md;
+		overflow: hidden;
+	}
+
+	.r6o-widget {
+		padding: $spacing-md;
+		border-bottom: 1px solid $color-neutral-bg;
+
+		&:last-child {
+			border-bottom: none;
+		}
+	}
+
+	textarea,
+	input[type='text'] {
+		font-family: $font-family-ui;
+		font-size: $font-size-body-sm;
+		color: $color-text-primary;
+		border: 1px solid $color-border;
+		border-radius: $radius-sm;
+		padding: $spacing-sm;
+
+		&:focus {
+			outline: none;
+			border-color: $color-cyan;
+			box-shadow: $shadow-focus;
+		}
+	}
+
+	// Кнопки «OK / Cancel» приводим к виду кнопок приложения.
+	.r6o-footer {
+		display: flex;
+		justify-content: flex-end;
+		gap: $spacing-sm;
+		padding: $spacing-md;
+		background: $color-bg-layout;
+
+		button {
+			font-family: $font-family-ui;
+			font-size: 13px;
+			font-weight: $font-weight-semibold;
+			padding: 6px 16px;
+			border-radius: $radius-full;
+			border: 1px solid $color-border-strong;
+			background: $color-bg-container;
+			color: $color-text-primary;
+			cursor: pointer;
+
+			&:hover {
+				border-color: $color-cyan;
+				color: $color-cyan;
+			}
+
+			&.r6o-btn.outline {
+				background: transparent;
+			}
+
+			&:not(.outline) {
+				background: $color-navy;
+				border-color: $color-navy;
+				color: $color-text-inverse;
+
+				&:hover {
+					background: $slate-700;
+					border-color: $slate-700;
+					color: $color-text-inverse;
+				}
+			}
+		}
+	}
+
+	// Теги TI-RADS.
+	.r6o-taglist li {
+		font-family: $font-family-ui;
+		font-size: $font-size-caption;
+		border-radius: $radius-full;
+		background: $color-neutral-bg;
+		color: $slate-700;
+		padding: 2px 10px;
+	}
+}

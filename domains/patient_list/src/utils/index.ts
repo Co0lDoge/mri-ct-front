@@ -1,0 +1,2 @@
+export { getAvatarText } from './getAvatarText';
+

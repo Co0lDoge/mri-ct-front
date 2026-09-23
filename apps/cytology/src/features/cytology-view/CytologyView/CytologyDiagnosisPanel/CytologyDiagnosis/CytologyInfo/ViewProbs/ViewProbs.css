@@ -1,0 +1,16 @@
+.probs {
+    gap: 20px;
+}
+
+.probs-item {
+    align-items: center;
+    gap: 20px;
+}
+
+.probs-item * {
+    margin-bottom: 0 !important;
+}
+
+.highlight-row {
+    background-color: #ffcccc;
+}

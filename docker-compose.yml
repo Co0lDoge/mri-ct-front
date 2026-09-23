@@ -1,0 +1,60 @@
+# Фронты в контейнерах: один nginx на цитологию и УЗИ плюс сервис чанковой
+# загрузки снимков.
+#
+# Перед сборкой нужно собрать статику — образ её не собирает:
+#
+#   npm run build:cytology
+#   npm run build:ultrasound
+#   xcopy /E /I /Y apps\cytology\dist   build\dist\cytology
+#   xcopy /E /I /Y apps\ultrasound\dist build\dist\ultrasound
+#   docker compose up -d --build
+
+name: medml-front
+
+services:
+  front:
+    container_name: medml_front
+    build:
+      context: ./build
+      dockerfile: Dockerfile
+    ports:
+      - '3001:80' # цитология
+      - '3002:81' # УЗИ
+    environment:
+      API_BACKEND_URL: http://composition_api:50055
+      DZI_BACKEND_URL: http://tiler_service:50055
+      UPLOAD_BACKEND_URL: http://cytology_upload:8090
+
+      # УЗИ. Если приложение собрано под Django (VITE_API_BACKEND=thyroid),
+      # сюда нужно поставить адрес Django.
+      UZI_API_BACKEND_URL: http://composition_api:50055
+      UZI_BILLING_BACKEND_URL: http://composition_api:50055
+    depends_on:
+      cytology_upload:
+        condition: service_healthy
+    restart: always
+    networks:
+      - backend
+
+  cytology_upload:
+    container_name: cytology_upload
+    build:
+      context: .
+      dockerfile: services/cytology-upload/Dockerfile
+    environment:
+      API_PROXY_TARGET: http://composition_api:50055
+      CYTOLOGY_CREATE_PATH: /api/v1/cytology/create
+      UPLOAD_ROOT: /data/uploads
+    volumes:
+      - cytology_uploads:/data/uploads
+    restart: always
+    networks:
+      - backend
+
+volumes:
+  cytology_uploads:
+
+networks:
+  backend:
+    external: true
+    name: ${BACKEND_NETWORK:-yir_default}

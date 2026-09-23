@@ -1,0 +1,91 @@
+@use '@medml/ui/styles/tokens' as *;
+
+.page-shell {
+	padding-top: $page-top-offset;
+	padding-bottom: $spacing-3xl;
+
+	&__inner {
+		width: 100%;
+		max-width: $content-max-width + $content-padding-x * 2;
+		margin: 0 auto;
+		padding: 0 $content-padding-x;
+		box-sizing: border-box;
+	}
+
+	&__header {
+		display: flex;
+		flex-direction: column;
+		gap: $spacing-sm;
+		margin-bottom: $page-header-gap;
+	}
+
+	&__eyebrow {
+		font-family: $font-family-ui;
+		font-size: $font-size-caption;
+		font-weight: $font-weight-semibold;
+		letter-spacing: $tracking-eyebrow;
+		text-transform: uppercase;
+		color: $color-cyan;
+	}
+
+	&__title {
+		margin: 0;
+		font-family: $font-family-ui;
+		font-size: $font-size-h2;
+		font-weight: $font-weight-bold;
+		letter-spacing: $tracking-h2;
+		line-height: 1.15;
+		color: $color-text-primary;
+	}
+
+	&__subtitle {
+		margin: 0;
+		font-family: $font-family-ui;
+		font-size: $font-size-body;
+		font-weight: $font-weight-regular;
+		line-height: 1.4;
+		color: $color-text-secondary;
+	}
+
+	&__body {
+		display: flex;
+		flex-direction: column;
+		gap: $section-gap;
+	}
+
+	@media (max-width: 992px) {
+		padding-top: $spacing-xl;
+		padding-bottom: $spacing-xl;
+
+		&__title {
+			font-size: $font-size-h3;
+			letter-spacing: 0;
+		}
+
+		&__header {
+			margin-bottom: $spacing-lg;
+		}
+
+		&__body {
+			gap: $spacing-lg;
+		}
+	}
+
+	@media (max-width: 576px) {
+		&__inner {
+			padding: 0 $spacing-lg;
+		}
+
+		&__title {
+			font-size: $font-size-h4;
+		}
+
+		&__subtitle {
+			font-size: $font-size-body-sm;
+		}
+
+		.ant-card-body {
+			padding: $spacing-lg;
+		}
+	}
+}

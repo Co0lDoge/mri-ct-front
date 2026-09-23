@@ -1,0 +1,53 @@
+.diagnostic-is-running-page {
+  padding: 24px;
+  max-width: 720px;
+  margin: 0 auto;
+  width: 100%;
+  min-height: calc(100vh - 120px);
+  display: flex;
+  align-items: center;
+}
+
+.diagnostic-is-running-card {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+}
+
+.diagnostic-is-running-content {
+  width: 100%;
+  padding: 32px 24px;
+  align-items: center;
+  text-align: center;
+}
+
+.diagnostic-is-running-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #e6f4ff 0%, #f0f5ff 100%);
+  color: #1677ff;
+  font-size: 40px;
+}
+
+.diagnostic-is-running-text {
+  max-width: 480px;
+}
+
+.diagnostic-is-running-title {
+  margin: 0 0 12px !important;
+  font-weight: 600 !important;
+}
+
+.diagnostic-is-running-description {
+  margin: 0 0 8px !important;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.diagnostic-is-running-hint {
+  font-size: 14px;
+}

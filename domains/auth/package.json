@@ -1,0 +1,37 @@
+{
+  "name": "@medml/auth",
+  "version": "1.0.0",
+  "private": true,
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts",
+    "./middleware": "./src/middleware/createAuthMiddleware.ts"
+  },
+  "scripts": {
+    "dev": "tsc --watch",
+    "build": "tsc"
+  },
+  "dependencies": {
+    "@medml/shared": "*",
+    "@medml/store": "*",
+    "next-auth": "^4.24.11",
+    "lodash-es": "^4.17.21",
+    "dayjs": "^1.11.13"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "antd": "^5.12.0",
+    "next": "^14.0.0",
+    "react-router-dom": "^6.0.0 || ^7.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "@types/lodash-es": "^4.17.12"
+  }
+}
+
+

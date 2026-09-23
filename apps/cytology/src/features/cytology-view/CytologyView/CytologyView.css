@@ -1,0 +1,13 @@
+.cytology-section-label {
+	display: block;
+	font-size: 12px;
+	font-weight: 600;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+	color: rgba(0, 0, 0, 0.45);
+	margin-bottom: 8px;
+}
+
+.text-inherit {
+	color: inherit !important;
+}

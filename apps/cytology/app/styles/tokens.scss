@@ -1,0 +1,64 @@
+// Color Tokens
+$color-primary: #0047e0;
+$color-primary-hover: #3867df;
+$color-primary-active: #0236a5;
+$color-primary-dark: #039;
+$color-accent: #FF6B35;
+
+$color-text-primary: #222831;
+$color-text-secondary: #818181;
+$color-text-secondary-header: #6B7280;
+$color-text-secondary-footer: #9CA3AF;
+$color-text-white: #ffffff;
+$color-text-black: #000000;
+
+$color-background-white: #ffffff;
+$color-background-light: #fafafa;
+$color-background-body: #f6f8fb;
+
+// Font Tokens
+$font-family-base: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+  "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+  "Noto Color Emoji";
+
+$font-family-secondary: "SF Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+  "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+  "Noto Color Emoji";
+
+$font-size-base: 14px;
+$font-size-small: 12px;
+$font-size-medium: 16px;
+$font-size-large: 18px;
+$font-size-xl: 20px;
+$font-size-xxl: 35px;
+$font-size-title: 55px;
+
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 510;
+$font-weight-bold: 600;
+$font-weight-bold-strong: 700;
+
+$line-height-base: 1;
+$line-height-normal: 1.5;
+$line-height-text: 23px;
+$line-height-small: 15px;
+$line-height-secondary: 24px;
+
+// Spacing Tokens
+$spacing-xs: 10px;
+$spacing-sm: 20px;
+$spacing-md: 30px;
+$spacing-lg: 100px;
+
+// Layout Tokens
+$header-height: 50px;
+$footer-height: 330px;
+$auth-container-width: 350px;
+$auth-form-height-register: 950px;
+
+// Z-index Tokens
+$z-index-header: 2;
+$z-index-spinner: 1001;
+

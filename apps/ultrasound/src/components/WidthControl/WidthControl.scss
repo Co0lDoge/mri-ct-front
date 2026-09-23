@@ -1,0 +1,19 @@
+@use '@/styles/tokens' as *;
+
+.width-control {
+	width: 100%;
+	background-color: inherit;
+
+	&__inner {
+		width: 100%;
+		max-width: $content-max-width + $content-padding-x * 2;
+		margin: 0 auto;
+		padding: 0 $content-padding-x;
+		box-sizing: border-box;
+		background-color: inherit;
+
+		@media (max-width: 576px) {
+			padding: 0 $spacing-lg;
+		}
+	}
+}

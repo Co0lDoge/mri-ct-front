@@ -1,0 +1,4157 @@
+[
+  {
+    "id": "seg_3_0",
+    "seriesId": "S2",
+    "label": "Аденома гипофиза (nnU-Net 3D)",
+    "color": "#FF3B30",
+    "visibleByDefault": true,
+    "points": [
+      {
+        "x": 256,
+        "y": 252,
+        "sliceIndex": 3
+      },
+      {
+        "x": 252,
+        "y": 256,
+        "sliceIndex": 3
+      },
+      {
+        "x": 252,
+        "y": 257,
+        "sliceIndex": 3
+      },
+      {
+        "x": 251,
+        "y": 258,
+        "sliceIndex": 3
+      },
+      {
+        "x": 251,
+        "y": 261,
+        "sliceIndex": 3
+      },
+      {
+        "x": 252,
+        "y": 262,
+        "sliceIndex": 3
+      },
+      {
+        "x": 252,
+        "y": 267,
+        "sliceIndex": 3
+      },
+      {
+        "x": 253,
+        "y": 268,
+        "sliceIndex": 3
+      },
+      {
+        "x": 253,
+        "y": 269,
+        "sliceIndex": 3
+      },
+      {
+        "x": 254,
+        "y": 270,
+        "sliceIndex": 3
+      },
+      {
+        "x": 254,
+        "y": 271,
+        "sliceIndex": 3
+      },
+      {
+        "x": 255,
+        "y": 272,
+        "sliceIndex": 3
+      },
+      {
+        "x": 257,
+        "y": 272,
+        "sliceIndex": 3
+      },
+      {
+        "x": 258,
+        "y": 271,
+        "sliceIndex": 3
+      },
+      {
+        "x": 259,
+        "y": 271,
+        "sliceIndex": 3
+      },
+      {
+        "x": 260,
+        "y": 270,
+        "sliceIndex": 3
+      },
+      {
+        "x": 260,
+        "y": 269,
+        "sliceIndex": 3
+      },
+      {
+        "x": 262,
+        "y": 267,
+        "sliceIndex": 3
+      },
+      {
+        "x": 262,
+        "y": 264,
+        "sliceIndex": 3
+      },
+      {
+        "x": 263,
+        "y": 263,
+        "sliceIndex": 3
+      },
+      {
+        "x": 262,
+        "y": 262,
+        "sliceIndex": 3
+      },
+      {
+        "x": 262,
+        "y": 256,
+        "sliceIndex": 3
+      },
+      {
+        "x": 261,
+        "y": 255,
+        "sliceIndex": 3
+      },
+      {
+        "x": 261,
+        "y": 253,
+        "sliceIndex": 3
+      },
+      {
+        "x": 260,
+        "y": 252,
+        "sliceIndex": 3
+      }
+    ]
+  },
+  {
+    "id": "seg_4_0",
+    "seriesId": "S2",
+    "label": "Аденома гипофиза (nnU-Net 3D)",
+    "color": "#FF3B30",
+    "visibleByDefault": true,
+    "points": [
+      {
+        "x": 255,
+        "y": 246,
+        "sliceIndex": 4
+      },
+      {
+        "x": 254,
+        "y": 247,
+        "sliceIndex": 4
+      },
+      {
+        "x": 253,
+        "y": 247,
+        "sliceIndex": 4
+      },
+      {
+        "x": 250,
+        "y": 250,
+        "sliceIndex": 4
+      },
+      {
+        "x": 250,
+        "y": 251,
+        "sliceIndex": 4
+      },
+      {
+        "x": 247,
+        "y": 254,
+        "sliceIndex": 4
+      },
+      {
+        "x": 246,
+        "y": 254,
+        "sliceIndex": 4
+      },
+      {
+        "x": 244,
+        "y": 256,
+        "sliceIndex": 4
+      },
+      {
+        "x": 243,
+        "y": 256,
+        "sliceIndex": 4
+      },
+      {
+        "x": 242,
+        "y": 257,
+        "sliceIndex": 4
+      },
+      {
+        "x": 239,
+        "y": 257,
+        "sliceIndex": 4
+      },
+      {
+        "x": 238,
+        "y": 258,
+        "sliceIndex": 4
+      },
+      {
+        "x": 237,
+        "y": 258,
+        "sliceIndex": 4
+      },
+      {
+        "x": 236,
+        "y": 259,
+        "sliceIndex": 4
+      },
+      {
+        "x": 236,
+        "y": 261,
+        "sliceIndex": 4
+      },
+      {
+        "x": 237,
+        "y": 262,
+        "sliceIndex": 4
+      },
+      {
+        "x": 237,
+        "y": 264,
+        "sliceIndex": 4
+      },
+      {
+        "x": 239,
+        "y": 266,
+        "sliceIndex": 4
+      },
+      {
+        "x": 240,
+        "y": 266,
+        "sliceIndex": 4
+      },
+      {
+        "x": 241,
+        "y": 267,
+        "sliceIndex": 4
+      },
+      {
+        "x": 242,
+        "y": 267,
+        "sliceIndex": 4
+      },
+      {
+        "x": 243,
+        "y": 268,
+        "sliceIndex": 4
+      },
+      {
+        "x": 245,
+        "y": 268,
+        "sliceIndex": 4
+      },
+      {
+        "x": 246,
+        "y": 269,
+        "sliceIndex": 4
+      },
+      {
+        "x": 248,
+        "y": 269,
+        "sliceIndex": 4
+      },
+      {
+        "x": 249,
+        "y": 270,
+        "sliceIndex": 4
+      },
+      {
+        "x": 250,
+        "y": 270,
+        "sliceIndex": 4
+      },
+      {
+        "x": 251,
+        "y": 271,
+        "sliceIndex": 4
+      },
+      {
+        "x": 252,
+        "y": 271,
+        "sliceIndex": 4
+      },
+      {
+        "x": 257,
+        "y": 276,
+        "sliceIndex": 4
+      },
+      {
+        "x": 259,
+        "y": 276,
+        "sliceIndex": 4
+      },
+      {
+        "x": 260,
+        "y": 275,
+        "sliceIndex": 4
+      },
+      {
+        "x": 261,
+        "y": 275,
+        "sliceIndex": 4
+      },
+      {
+        "x": 262,
+        "y": 274,
+        "sliceIndex": 4
+      },
+      {
+        "x": 263,
+        "y": 274,
+        "sliceIndex": 4
+      },
+      {
+        "x": 264,
+        "y": 273,
+        "sliceIndex": 4
+      },
+      {
+        "x": 265,
+        "y": 273,
+        "sliceIndex": 4
+      },
+      {
+        "x": 266,
+        "y": 274,
+        "sliceIndex": 4
+      },
+      {
+        "x": 271,
+        "y": 274,
+        "sliceIndex": 4
+      },
+      {
+        "x": 272,
+        "y": 273,
+        "sliceIndex": 4
+      },
+      {
+        "x": 273,
+        "y": 273,
+        "sliceIndex": 4
+      },
+      {
+        "x": 276,
+        "y": 270,
+        "sliceIndex": 4
+      },
+      {
+        "x": 276,
+        "y": 265,
+        "sliceIndex": 4
+      },
+      {
+        "x": 275,
+        "y": 264,
+        "sliceIndex": 4
+      },
+      {
+        "x": 275,
+        "y": 261,
+        "sliceIndex": 4
+      },
+      {
+        "x": 273,
+        "y": 259,
+        "sliceIndex": 4
+      },
+      {
+        "x": 272,
+        "y": 259,
+        "sliceIndex": 4
+      },
+      {
+        "x": 270,
+        "y": 257,
+        "sliceIndex": 4
+      },
+      {
+        "x": 270,
+        "y": 256,
+        "sliceIndex": 4
+      },
+      {
+        "x": 271,
+        "y": 255,
+        "sliceIndex": 4
+      },
+      {
+        "x": 271,
+        "y": 254,
+        "sliceIndex": 4
+      },
+      {
+        "x": 272,
+        "y": 253,
+        "sliceIndex": 4
+      },
+      {
+        "x": 271,
+        "y": 252,
+        "sliceIndex": 4
+      },
+      {
+        "x": 271,
+        "y": 251,
+        "sliceIndex": 4
+      },
+      {
+        "x": 269,
+        "y": 249,
+        "sliceIndex": 4
+      },
+      {
+        "x": 268,
+        "y": 249,
+        "sliceIndex": 4
+      },
+      {
+        "x": 267,
+        "y": 248,
+        "sliceIndex": 4
+      },
+      {
+        "x": 264,
+        "y": 248,
+        "sliceIndex": 4
+      },
+      {
+        "x": 263,
+        "y": 247,
+        "sliceIndex": 4
+      },
+      {
+        "x": 262,
+        "y": 247,
+        "sliceIndex": 4
+      },
+      {
+        "x": 261,
+        "y": 246,
+        "sliceIndex": 4
+      }
+    ]
+  },
+  {
+    "id": "seg_5_0",
+    "seriesId": "S2",
+    "label": "Аденома гипофиза (nnU-Net 3D)",
+    "color": "#FF3B30",
+    "visibleByDefault": true,
+    "points": [
+      {
+        "x": 253,
+        "y": 245,
+        "sliceIndex": 5
+      },
+      {
+        "x": 252,
+        "y": 246,
+        "sliceIndex": 5
+      },
+      {
+        "x": 251,
+        "y": 246,
+        "sliceIndex": 5
+      },
+      {
+        "x": 248,
+        "y": 249,
+        "sliceIndex": 5
+      },
+      {
+        "x": 248,
+        "y": 250,
+        "sliceIndex": 5
+      },
+      {
+        "x": 242,
+        "y": 256,
+        "sliceIndex": 5
+      },
+      {
+        "x": 241,
+        "y": 256,
+        "sliceIndex": 5
+      },
+      {
+        "x": 239,
+        "y": 258,
+        "sliceIndex": 5
+      },
+      {
+        "x": 239,
+        "y": 260,
+        "sliceIndex": 5
+      },
+      {
+        "x": 238,
+        "y": 261,
+        "sliceIndex": 5
+      },
+      {
+        "x": 238,
+        "y": 263,
+        "sliceIndex": 5
+      },
+      {
+        "x": 237,
+        "y": 264,
+        "sliceIndex": 5
+      },
+      {
+        "x": 237,
+        "y": 265,
+        "sliceIndex": 5
+      },
+      {
+        "x": 236,
+        "y": 266,
+        "sliceIndex": 5
+      },
+      {
+        "x": 236,
+        "y": 269,
+        "sliceIndex": 5
+      },
+      {
+        "x": 237,
+        "y": 270,
+        "sliceIndex": 5
+      },
+      {
+        "x": 237,
+        "y": 271,
+        "sliceIndex": 5
+      },
+      {
+        "x": 238,
+        "y": 271,
+        "sliceIndex": 5
+      },
+      {
+        "x": 240,
+        "y": 273,
+        "sliceIndex": 5
+      },
+      {
+        "x": 242,
+        "y": 273,
+        "sliceIndex": 5
+      },
+      {
+        "x": 243,
+        "y": 274,
+        "sliceIndex": 5
+      },
+      {
+        "x": 246,
+        "y": 274,
+        "sliceIndex": 5
+      },
+      {
+        "x": 247,
+        "y": 275,
+        "sliceIndex": 5
+      },
+      {
+        "x": 249,
+        "y": 275,
+        "sliceIndex": 5
+      },
+      {
+        "x": 250,
+        "y": 276,
+        "sliceIndex": 5
+      },
+      {
+        "x": 252,
+        "y": 276,
+        "sliceIndex": 5
+      },
+      {
+        "x": 253,
+        "y": 277,
+        "sliceIndex": 5
+      },
+      {
+        "x": 256,
+        "y": 277,
+        "sliceIndex": 5
+      },
+      {
+        "x": 257,
+        "y": 278,
+        "sliceIndex": 5
+      },
+      {
+        "x": 259,
+        "y": 278,
+        "sliceIndex": 5
+      },
+      {
+        "x": 260,
+        "y": 279,
+        "sliceIndex": 5
+      },
+      {
+        "x": 262,
+        "y": 279,
+        "sliceIndex": 5
+      },
+      {
+        "x": 263,
+        "y": 278,
+        "sliceIndex": 5
+      },
+      {
+        "x": 264,
+        "y": 278,
+        "sliceIndex": 5
+      },
+      {
+        "x": 265,
+        "y": 277,
+        "sliceIndex": 5
+      },
+      {
+        "x": 271,
+        "y": 277,
+        "sliceIndex": 5
+      },
+      {
+        "x": 272,
+        "y": 278,
+        "sliceIndex": 5
+      },
+      {
+        "x": 273,
+        "y": 278,
+        "sliceIndex": 5
+      },
+      {
+        "x": 274,
+        "y": 279,
+        "sliceIndex": 5
+      },
+      {
+        "x": 278,
+        "y": 279,
+        "sliceIndex": 5
+      },
+      {
+        "x": 278,
+        "y": 278,
+        "sliceIndex": 5
+      },
+      {
+        "x": 279,
+        "y": 277,
+        "sliceIndex": 5
+      },
+      {
+        "x": 279,
+        "y": 275,
+        "sliceIndex": 5
+      },
+      {
+        "x": 280,
+        "y": 274,
+        "sliceIndex": 5
+      },
+      {
+        "x": 280,
+        "y": 257,
+        "sliceIndex": 5
+      },
+      {
+        "x": 279,
+        "y": 256,
+        "sliceIndex": 5
+      },
+      {
+        "x": 279,
+        "y": 254,
+        "sliceIndex": 5
+      },
+      {
+        "x": 278,
+        "y": 253,
+        "sliceIndex": 5
+      },
+      {
+        "x": 278,
+        "y": 252,
+        "sliceIndex": 5
+      },
+      {
+        "x": 276,
+        "y": 250,
+        "sliceIndex": 5
+      },
+      {
+        "x": 276,
+        "y": 249,
+        "sliceIndex": 5
+      },
+      {
+        "x": 274,
+        "y": 247,
+        "sliceIndex": 5
+      },
+      {
+        "x": 273,
+        "y": 247,
+        "sliceIndex": 5
+      },
+      {
+        "x": 272,
+        "y": 246,
+        "sliceIndex": 5
+      },
+      {
+        "x": 267,
+        "y": 246,
+        "sliceIndex": 5
+      },
+      {
+        "x": 266,
+        "y": 247,
+        "sliceIndex": 5
+      },
+      {
+        "x": 264,
+        "y": 247,
+        "sliceIndex": 5
+      },
+      {
+        "x": 263,
+        "y": 246,
+        "sliceIndex": 5
+      },
+      {
+        "x": 261,
+        "y": 246,
+        "sliceIndex": 5
+      },
+      {
+        "x": 260,
+        "y": 245,
+        "sliceIndex": 5
+      }
+    ]
+  },
+  {
+    "id": "seg_6_0",
+    "seriesId": "S2",
+    "label": "Аденома гипофиза (nnU-Net 3D)",
+    "color": "#FF3B30",
+    "visibleByDefault": true,
+    "points": [
+      {
+        "x": 257,
+        "y": 242,
+        "sliceIndex": 6
+      },
+      {
+        "x": 256,
+        "y": 243,
+        "sliceIndex": 6
+      },
+      {
+        "x": 253,
+        "y": 243,
+        "sliceIndex": 6
+      },
+      {
+        "x": 252,
+        "y": 244,
+        "sliceIndex": 6
+      },
+      {
+        "x": 251,
+        "y": 244,
+        "sliceIndex": 6
+      },
+      {
+        "x": 249,
+        "y": 246,
+        "sliceIndex": 6
+      },
+      {
+        "x": 249,
+        "y": 247,
+        "sliceIndex": 6
+      },
+      {
+        "x": 248,
+        "y": 248,
+        "sliceIndex": 6
+      },
+      {
+        "x": 248,
+        "y": 250,
+        "sliceIndex": 6
+      },
+      {
+        "x": 247,
+        "y": 251,
+        "sliceIndex": 6
+      },
+      {
+        "x": 247,
+        "y": 252,
+        "sliceIndex": 6
+      },
+      {
+        "x": 245,
+        "y": 254,
+        "sliceIndex": 6
+      },
+      {
+        "x": 244,
+        "y": 254,
+        "sliceIndex": 6
+      },
+      {
+        "x": 243,
+        "y": 255,
+        "sliceIndex": 6
+      },
+      {
+        "x": 242,
+        "y": 255,
+        "sliceIndex": 6
+      },
+      {
+        "x": 240,
+        "y": 257,
+        "sliceIndex": 6
+      },
+      {
+        "x": 240,
+        "y": 258,
+        "sliceIndex": 6
+      },
+      {
+        "x": 238,
+        "y": 260,
+        "sliceIndex": 6
+      },
+      {
+        "x": 238,
+        "y": 263,
+        "sliceIndex": 6
+      },
+      {
+        "x": 237,
+        "y": 264,
+        "sliceIndex": 6
+      },
+      {
+        "x": 237,
+        "y": 267,
+        "sliceIndex": 6
+      },
+      {
+        "x": 238,
+        "y": 268,
+        "sliceIndex": 6
+      },
+      {
+        "x": 238,
+        "y": 275,
+        "sliceIndex": 6
+      },
+      {
+        "x": 239,
+        "y": 276,
+        "sliceIndex": 6
+      },
+      {
+        "x": 240,
+        "y": 276,
+        "sliceIndex": 6
+      },
+      {
+        "x": 241,
+        "y": 277,
+        "sliceIndex": 6
+      },
+      {
+        "x": 242,
+        "y": 277,
+        "sliceIndex": 6
+      },
+      {
+        "x": 244,
+        "y": 279,
+        "sliceIndex": 6
+      },
+      {
+        "x": 246,
+        "y": 279,
+        "sliceIndex": 6
+      },
+      {
+        "x": 247,
+        "y": 280,
+        "sliceIndex": 6
+      },
+      {
+        "x": 253,
+        "y": 280,
+        "sliceIndex": 6
+      },
+      {
+        "x": 254,
+        "y": 281,
+        "sliceIndex": 6
+      },
+      {
+        "x": 260,
+        "y": 281,
+        "sliceIndex": 6
+      },
+      {
+        "x": 261,
+        "y": 282,
+        "sliceIndex": 6
+      },
+      {
+        "x": 262,
+        "y": 282,
+        "sliceIndex": 6
+      },
+      {
+        "x": 263,
+        "y": 283,
+        "sliceIndex": 6
+      },
+      {
+        "x": 264,
+        "y": 283,
+        "sliceIndex": 6
+      },
+      {
+        "x": 266,
+        "y": 285,
+        "sliceIndex": 6
+      },
+      {
+        "x": 267,
+        "y": 285,
+        "sliceIndex": 6
+      },
+      {
+        "x": 268,
+        "y": 286,
+        "sliceIndex": 6
+      },
+      {
+        "x": 268,
+        "y": 287,
+        "sliceIndex": 6
+      },
+      {
+        "x": 269,
+        "y": 288,
+        "sliceIndex": 6
+      },
+      {
+        "x": 269,
+        "y": 289,
+        "sliceIndex": 6
+      },
+      {
+        "x": 270,
+        "y": 290,
+        "sliceIndex": 6
+      },
+      {
+        "x": 272,
+        "y": 290,
+        "sliceIndex": 6
+      },
+      {
+        "x": 274,
+        "y": 288,
+        "sliceIndex": 6
+      },
+      {
+        "x": 275,
+        "y": 288,
+        "sliceIndex": 6
+      },
+      {
+        "x": 276,
+        "y": 287,
+        "sliceIndex": 6
+      },
+      {
+        "x": 276,
+        "y": 285,
+        "sliceIndex": 6
+      },
+      {
+        "x": 277,
+        "y": 284,
+        "sliceIndex": 6
+      },
+      {
+        "x": 277,
+        "y": 283,
+        "sliceIndex": 6
+      },
+      {
+        "x": 282,
+        "y": 278,
+        "sliceIndex": 6
+      },
+      {
+        "x": 282,
+        "y": 277,
+        "sliceIndex": 6
+      },
+      {
+        "x": 283,
+        "y": 276,
+        "sliceIndex": 6
+      },
+      {
+        "x": 283,
+        "y": 275,
+        "sliceIndex": 6
+      },
+      {
+        "x": 285,
+        "y": 273,
+        "sliceIndex": 6
+      },
+      {
+        "x": 286,
+        "y": 273,
+        "sliceIndex": 6
+      },
+      {
+        "x": 288,
+        "y": 271,
+        "sliceIndex": 6
+      },
+      {
+        "x": 288,
+        "y": 270,
+        "sliceIndex": 6
+      },
+      {
+        "x": 291,
+        "y": 267,
+        "sliceIndex": 6
+      },
+      {
+        "x": 291,
+        "y": 265,
+        "sliceIndex": 6
+      },
+      {
+        "x": 290,
+        "y": 264,
+        "sliceIndex": 6
+      },
+      {
+        "x": 290,
+        "y": 263,
+        "sliceIndex": 6
+      },
+      {
+        "x": 283,
+        "y": 256,
+        "sliceIndex": 6
+      },
+      {
+        "x": 283,
+        "y": 254,
+        "sliceIndex": 6
+      },
+      {
+        "x": 282,
+        "y": 253,
+        "sliceIndex": 6
+      },
+      {
+        "x": 283,
+        "y": 252,
+        "sliceIndex": 6
+      },
+      {
+        "x": 283,
+        "y": 249,
+        "sliceIndex": 6
+      },
+      {
+        "x": 282,
+        "y": 248,
+        "sliceIndex": 6
+      },
+      {
+        "x": 281,
+        "y": 248,
+        "sliceIndex": 6
+      },
+      {
+        "x": 280,
+        "y": 247,
+        "sliceIndex": 6
+      },
+      {
+        "x": 279,
+        "y": 247,
+        "sliceIndex": 6
+      },
+      {
+        "x": 277,
+        "y": 245,
+        "sliceIndex": 6
+      },
+      {
+        "x": 276,
+        "y": 245,
+        "sliceIndex": 6
+      },
+      {
+        "x": 275,
+        "y": 244,
+        "sliceIndex": 6
+      },
+      {
+        "x": 275,
+        "y": 243,
+        "sliceIndex": 6
+      },
+      {
+        "x": 272,
+        "y": 243,
+        "sliceIndex": 6
+      },
+      {
+        "x": 271,
+        "y": 242,
+        "sliceIndex": 6
+      },
+      {
+        "x": 267,
+        "y": 242,
+        "sliceIndex": 6
+      },
+      {
+        "x": 266,
+        "y": 243,
+        "sliceIndex": 6
+      },
+      {
+        "x": 265,
+        "y": 243,
+        "sliceIndex": 6
+      },
+      {
+        "x": 264,
+        "y": 244,
+        "sliceIndex": 6
+      },
+      {
+        "x": 260,
+        "y": 244,
+        "sliceIndex": 6
+      },
+      {
+        "x": 259,
+        "y": 243,
+        "sliceIndex": 6
+      },
+      {
+        "x": 259,
+        "y": 242,
+        "sliceIndex": 6
+      }
+    ]
+  },
+  {
+    "id": "seg_7_0",
+    "seriesId": "S2",
+    "label": "Аденома гипофиза (nnU-Net 3D)",
+    "color": "#FF3B30",
+    "visibleByDefault": true,
+    "points": [
+      {
+        "x": 263,
+        "y": 241,
+        "sliceIndex": 7
+      },
+      {
+        "x": 262,
+        "y": 242,
+        "sliceIndex": 7
+      },
+      {
+        "x": 257,
+        "y": 242,
+        "sliceIndex": 7
+      },
+      {
+        "x": 256,
+        "y": 243,
+        "sliceIndex": 7
+      },
+      {
+        "x": 252,
+        "y": 243,
+        "sliceIndex": 7
+      },
+      {
+        "x": 251,
+        "y": 244,
+        "sliceIndex": 7
+      },
+      {
+        "x": 250,
+        "y": 244,
+        "sliceIndex": 7
+      },
+      {
+        "x": 249,
+        "y": 245,
+        "sliceIndex": 7
+      },
+      {
+        "x": 249,
+        "y": 249,
+        "sliceIndex": 7
+      },
+      {
+        "x": 245,
+        "y": 253,
+        "sliceIndex": 7
+      },
+      {
+        "x": 244,
+        "y": 253,
+        "sliceIndex": 7
+      },
+      {
+        "x": 243,
+        "y": 254,
+        "sliceIndex": 7
+      },
+      {
+        "x": 241,
+        "y": 254,
+        "sliceIndex": 7
+      },
+      {
+        "x": 239,
+        "y": 252,
+        "sliceIndex": 7
+      },
+      {
+        "x": 238,
+        "y": 252,
+        "sliceIndex": 7
+      },
+      {
+        "x": 237,
+        "y": 251,
+        "sliceIndex": 7
+      },
+      {
+        "x": 235,
+        "y": 251,
+        "sliceIndex": 7
+      },
+      {
+        "x": 234,
+        "y": 252,
+        "sliceIndex": 7
+      },
+      {
+        "x": 233,
+        "y": 252,
+        "sliceIndex": 7
+      },
+      {
+        "x": 233,
+        "y": 253,
+        "sliceIndex": 7
+      },
+      {
+        "x": 232,
+        "y": 254,
+        "sliceIndex": 7
+      },
+      {
+        "x": 232,
+        "y": 256,
+        "sliceIndex": 7
+      },
+      {
+        "x": 231,
+        "y": 257,
+        "sliceIndex": 7
+      },
+      {
+        "x": 231,
+        "y": 258,
+        "sliceIndex": 7
+      },
+      {
+        "x": 230,
+        "y": 259,
+        "sliceIndex": 7
+      },
+      {
+        "x": 230,
+        "y": 264,
+        "sliceIndex": 7
+      },
+      {
+        "x": 231,
+        "y": 264,
+        "sliceIndex": 7
+      },
+      {
+        "x": 232,
+        "y": 265,
+        "sliceIndex": 7
+      },
+      {
+        "x": 235,
+        "y": 265,
+        "sliceIndex": 7
+      },
+      {
+        "x": 237,
+        "y": 267,
+        "sliceIndex": 7
+      },
+      {
+        "x": 237,
+        "y": 268,
+        "sliceIndex": 7
+      },
+      {
+        "x": 238,
+        "y": 269,
+        "sliceIndex": 7
+      },
+      {
+        "x": 238,
+        "y": 278,
+        "sliceIndex": 7
+      },
+      {
+        "x": 239,
+        "y": 279,
+        "sliceIndex": 7
+      },
+      {
+        "x": 239,
+        "y": 281,
+        "sliceIndex": 7
+      },
+      {
+        "x": 240,
+        "y": 282,
+        "sliceIndex": 7
+      },
+      {
+        "x": 241,
+        "y": 282,
+        "sliceIndex": 7
+      },
+      {
+        "x": 242,
+        "y": 283,
+        "sliceIndex": 7
+      },
+      {
+        "x": 256,
+        "y": 283,
+        "sliceIndex": 7
+      },
+      {
+        "x": 257,
+        "y": 284,
+        "sliceIndex": 7
+      },
+      {
+        "x": 260,
+        "y": 284,
+        "sliceIndex": 7
+      },
+      {
+        "x": 261,
+        "y": 285,
+        "sliceIndex": 7
+      },
+      {
+        "x": 262,
+        "y": 285,
+        "sliceIndex": 7
+      },
+      {
+        "x": 263,
+        "y": 286,
+        "sliceIndex": 7
+      },
+      {
+        "x": 264,
+        "y": 286,
+        "sliceIndex": 7
+      },
+      {
+        "x": 266,
+        "y": 288,
+        "sliceIndex": 7
+      },
+      {
+        "x": 267,
+        "y": 288,
+        "sliceIndex": 7
+      },
+      {
+        "x": 270,
+        "y": 291,
+        "sliceIndex": 7
+      },
+      {
+        "x": 271,
+        "y": 290,
+        "sliceIndex": 7
+      },
+      {
+        "x": 273,
+        "y": 290,
+        "sliceIndex": 7
+      },
+      {
+        "x": 274,
+        "y": 289,
+        "sliceIndex": 7
+      },
+      {
+        "x": 275,
+        "y": 289,
+        "sliceIndex": 7
+      },
+      {
+        "x": 284,
+        "y": 280,
+        "sliceIndex": 7
+      },
+      {
+        "x": 284,
+        "y": 279,
+        "sliceIndex": 7
+      },
+      {
+        "x": 290,
+        "y": 273,
+        "sliceIndex": 7
+      },
+      {
+        "x": 290,
+        "y": 272,
+        "sliceIndex": 7
+      },
+      {
+        "x": 291,
+        "y": 271,
+        "sliceIndex": 7
+      },
+      {
+        "x": 291,
+        "y": 270,
+        "sliceIndex": 7
+      },
+      {
+        "x": 292,
+        "y": 269,
+        "sliceIndex": 7
+      },
+      {
+        "x": 292,
+        "y": 268,
+        "sliceIndex": 7
+      },
+      {
+        "x": 291,
+        "y": 267,
+        "sliceIndex": 7
+      },
+      {
+        "x": 291,
+        "y": 266,
+        "sliceIndex": 7
+      },
+      {
+        "x": 290,
+        "y": 265,
+        "sliceIndex": 7
+      },
+      {
+        "x": 290,
+        "y": 264,
+        "sliceIndex": 7
+      },
+      {
+        "x": 289,
+        "y": 263,
+        "sliceIndex": 7
+      },
+      {
+        "x": 289,
+        "y": 260,
+        "sliceIndex": 7
+      },
+      {
+        "x": 287,
+        "y": 258,
+        "sliceIndex": 7
+      },
+      {
+        "x": 286,
+        "y": 258,
+        "sliceIndex": 7
+      },
+      {
+        "x": 279,
+        "y": 251,
+        "sliceIndex": 7
+      },
+      {
+        "x": 279,
+        "y": 250,
+        "sliceIndex": 7
+      },
+      {
+        "x": 278,
+        "y": 249,
+        "sliceIndex": 7
+      },
+      {
+        "x": 278,
+        "y": 247,
+        "sliceIndex": 7
+      },
+      {
+        "x": 277,
+        "y": 246,
+        "sliceIndex": 7
+      },
+      {
+        "x": 277,
+        "y": 245,
+        "sliceIndex": 7
+      },
+      {
+        "x": 274,
+        "y": 242,
+        "sliceIndex": 7
+      },
+      {
+        "x": 272,
+        "y": 242,
+        "sliceIndex": 7
+      },
+      {
+        "x": 271,
+        "y": 241,
+        "sliceIndex": 7
+      }
+    ]
+  },
+  {
+    "id": "seg_8_0",
+    "seriesId": "S2",
+    "label": "Аденома гипофиза (nnU-Net 3D)",
+    "color": "#FF3B30",
+    "visibleByDefault": true,
+    "points": [
+      {
+        "x": 262,
+        "y": 239,
+        "sliceIndex": 8
+      },
+      {
+        "x": 261,
+        "y": 240,
+        "sliceIndex": 8
+      },
+      {
+        "x": 259,
+        "y": 240,
+        "sliceIndex": 8
+      },
+      {
+        "x": 258,
+        "y": 241,
+        "sliceIndex": 8
+      },
+      {
+        "x": 257,
+        "y": 241,
+        "sliceIndex": 8
+      },
+      {
+        "x": 255,
+        "y": 243,
+        "sliceIndex": 8
+      },
+      {
+        "x": 254,
+        "y": 243,
+        "sliceIndex": 8
+      },
+      {
+        "x": 253,
+        "y": 244,
+        "sliceIndex": 8
+      },
+      {
+        "x": 252,
+        "y": 244,
+        "sliceIndex": 8
+      },
+      {
+        "x": 250,
+        "y": 246,
+        "sliceIndex": 8
+      },
+      {
+        "x": 250,
+        "y": 247,
+        "sliceIndex": 8
+      },
+      {
+        "x": 249,
+        "y": 248,
+        "sliceIndex": 8
+      },
+      {
+        "x": 249,
+        "y": 249,
+        "sliceIndex": 8
+      },
+      {
+        "x": 247,
+        "y": 251,
+        "sliceIndex": 8
+      },
+      {
+        "x": 246,
+        "y": 251,
+        "sliceIndex": 8
+      },
+      {
+        "x": 245,
+        "y": 252,
+        "sliceIndex": 8
+      },
+      {
+        "x": 244,
+        "y": 252,
+        "sliceIndex": 8
+      },
+      {
+        "x": 243,
+        "y": 253,
+        "sliceIndex": 8
+      },
+      {
+        "x": 242,
+        "y": 252,
+        "sliceIndex": 8
+      },
+      {
+        "x": 239,
+        "y": 252,
+        "sliceIndex": 8
+      },
+      {
+        "x": 238,
+        "y": 251,
+        "sliceIndex": 8
+      },
+      {
+        "x": 235,
+        "y": 251,
+        "sliceIndex": 8
+      },
+      {
+        "x": 234,
+        "y": 252,
+        "sliceIndex": 8
+      },
+      {
+        "x": 233,
+        "y": 252,
+        "sliceIndex": 8
+      },
+      {
+        "x": 232,
+        "y": 253,
+        "sliceIndex": 8
+      },
+      {
+        "x": 231,
+        "y": 253,
+        "sliceIndex": 8
+      },
+      {
+        "x": 230,
+        "y": 254,
+        "sliceIndex": 8
+      },
+      {
+        "x": 230,
+        "y": 256,
+        "sliceIndex": 8
+      },
+      {
+        "x": 228,
+        "y": 258,
+        "sliceIndex": 8
+      },
+      {
+        "x": 228,
+        "y": 259,
+        "sliceIndex": 8
+      },
+      {
+        "x": 227,
+        "y": 260,
+        "sliceIndex": 8
+      },
+      {
+        "x": 227,
+        "y": 262,
+        "sliceIndex": 8
+      },
+      {
+        "x": 226,
+        "y": 263,
+        "sliceIndex": 8
+      },
+      {
+        "x": 226,
+        "y": 268,
+        "sliceIndex": 8
+      },
+      {
+        "x": 227,
+        "y": 269,
+        "sliceIndex": 8
+      },
+      {
+        "x": 227,
+        "y": 270,
+        "sliceIndex": 8
+      },
+      {
+        "x": 228,
+        "y": 271,
+        "sliceIndex": 8
+      },
+      {
+        "x": 230,
+        "y": 271,
+        "sliceIndex": 8
+      },
+      {
+        "x": 231,
+        "y": 272,
+        "sliceIndex": 8
+      },
+      {
+        "x": 234,
+        "y": 272,
+        "sliceIndex": 8
+      },
+      {
+        "x": 243,
+        "y": 281,
+        "sliceIndex": 8
+      },
+      {
+        "x": 243,
+        "y": 283,
+        "sliceIndex": 8
+      },
+      {
+        "x": 254,
+        "y": 283,
+        "sliceIndex": 8
+      },
+      {
+        "x": 255,
+        "y": 284,
+        "sliceIndex": 8
+      },
+      {
+        "x": 257,
+        "y": 284,
+        "sliceIndex": 8
+      },
+      {
+        "x": 258,
+        "y": 285,
+        "sliceIndex": 8
+      },
+      {
+        "x": 260,
+        "y": 285,
+        "sliceIndex": 8
+      },
+      {
+        "x": 261,
+        "y": 286,
+        "sliceIndex": 8
+      },
+      {
+        "x": 262,
+        "y": 286,
+        "sliceIndex": 8
+      },
+      {
+        "x": 263,
+        "y": 287,
+        "sliceIndex": 8
+      },
+      {
+        "x": 264,
+        "y": 287,
+        "sliceIndex": 8
+      },
+      {
+        "x": 267,
+        "y": 290,
+        "sliceIndex": 8
+      },
+      {
+        "x": 268,
+        "y": 290,
+        "sliceIndex": 8
+      },
+      {
+        "x": 270,
+        "y": 292,
+        "sliceIndex": 8
+      },
+      {
+        "x": 272,
+        "y": 292,
+        "sliceIndex": 8
+      },
+      {
+        "x": 273,
+        "y": 291,
+        "sliceIndex": 8
+      },
+      {
+        "x": 276,
+        "y": 291,
+        "sliceIndex": 8
+      },
+      {
+        "x": 277,
+        "y": 290,
+        "sliceIndex": 8
+      },
+      {
+        "x": 280,
+        "y": 290,
+        "sliceIndex": 8
+      },
+      {
+        "x": 281,
+        "y": 289,
+        "sliceIndex": 8
+      },
+      {
+        "x": 281,
+        "y": 288,
+        "sliceIndex": 8
+      },
+      {
+        "x": 282,
+        "y": 287,
+        "sliceIndex": 8
+      },
+      {
+        "x": 282,
+        "y": 285,
+        "sliceIndex": 8
+      },
+      {
+        "x": 283,
+        "y": 284,
+        "sliceIndex": 8
+      },
+      {
+        "x": 283,
+        "y": 283,
+        "sliceIndex": 8
+      },
+      {
+        "x": 286,
+        "y": 280,
+        "sliceIndex": 8
+      },
+      {
+        "x": 287,
+        "y": 280,
+        "sliceIndex": 8
+      },
+      {
+        "x": 289,
+        "y": 278,
+        "sliceIndex": 8
+      },
+      {
+        "x": 290,
+        "y": 278,
+        "sliceIndex": 8
+      },
+      {
+        "x": 291,
+        "y": 277,
+        "sliceIndex": 8
+      },
+      {
+        "x": 291,
+        "y": 266,
+        "sliceIndex": 8
+      },
+      {
+        "x": 292,
+        "y": 265,
+        "sliceIndex": 8
+      },
+      {
+        "x": 292,
+        "y": 258,
+        "sliceIndex": 8
+      },
+      {
+        "x": 291,
+        "y": 257,
+        "sliceIndex": 8
+      },
+      {
+        "x": 291,
+        "y": 254,
+        "sliceIndex": 8
+      },
+      {
+        "x": 290,
+        "y": 253,
+        "sliceIndex": 8
+      },
+      {
+        "x": 283,
+        "y": 253,
+        "sliceIndex": 8
+      },
+      {
+        "x": 282,
+        "y": 252,
+        "sliceIndex": 8
+      },
+      {
+        "x": 281,
+        "y": 252,
+        "sliceIndex": 8
+      },
+      {
+        "x": 278,
+        "y": 249,
+        "sliceIndex": 8
+      },
+      {
+        "x": 278,
+        "y": 246,
+        "sliceIndex": 8
+      },
+      {
+        "x": 277,
+        "y": 245,
+        "sliceIndex": 8
+      },
+      {
+        "x": 277,
+        "y": 244,
+        "sliceIndex": 8
+      },
+      {
+        "x": 276,
+        "y": 244,
+        "sliceIndex": 8
+      },
+      {
+        "x": 274,
+        "y": 242,
+        "sliceIndex": 8
+      },
+      {
+        "x": 273,
+        "y": 242,
+        "sliceIndex": 8
+      },
+      {
+        "x": 272,
+        "y": 241,
+        "sliceIndex": 8
+      },
+      {
+        "x": 270,
+        "y": 241,
+        "sliceIndex": 8
+      },
+      {
+        "x": 269,
+        "y": 240,
+        "sliceIndex": 8
+      },
+      {
+        "x": 266,
+        "y": 240,
+        "sliceIndex": 8
+      },
+      {
+        "x": 265,
+        "y": 239,
+        "sliceIndex": 8
+      }
+    ]
+  },
+  {
+    "id": "seg_9_0",
+    "seriesId": "S2",
+    "label": "Аденома гипофиза (nnU-Net 3D)",
+    "color": "#FF3B30",
+    "visibleByDefault": true,
+    "points": [
+      {
+        "x": 265,
+        "y": 231,
+        "sliceIndex": 9
+      },
+      {
+        "x": 264,
+        "y": 232,
+        "sliceIndex": 9
+      },
+      {
+        "x": 262,
+        "y": 232,
+        "sliceIndex": 9
+      },
+      {
+        "x": 261,
+        "y": 233,
+        "sliceIndex": 9
+      },
+      {
+        "x": 260,
+        "y": 233,
+        "sliceIndex": 9
+      },
+      {
+        "x": 258,
+        "y": 235,
+        "sliceIndex": 9
+      },
+      {
+        "x": 257,
+        "y": 235,
+        "sliceIndex": 9
+      },
+      {
+        "x": 254,
+        "y": 238,
+        "sliceIndex": 9
+      },
+      {
+        "x": 254,
+        "y": 239,
+        "sliceIndex": 9
+      },
+      {
+        "x": 252,
+        "y": 241,
+        "sliceIndex": 9
+      },
+      {
+        "x": 252,
+        "y": 242,
+        "sliceIndex": 9
+      },
+      {
+        "x": 251,
+        "y": 243,
+        "sliceIndex": 9
+      },
+      {
+        "x": 251,
+        "y": 244,
+        "sliceIndex": 9
+      },
+      {
+        "x": 250,
+        "y": 245,
+        "sliceIndex": 9
+      },
+      {
+        "x": 250,
+        "y": 247,
+        "sliceIndex": 9
+      },
+      {
+        "x": 249,
+        "y": 248,
+        "sliceIndex": 9
+      },
+      {
+        "x": 249,
+        "y": 249,
+        "sliceIndex": 9
+      },
+      {
+        "x": 244,
+        "y": 254,
+        "sliceIndex": 9
+      },
+      {
+        "x": 242,
+        "y": 254,
+        "sliceIndex": 9
+      },
+      {
+        "x": 241,
+        "y": 255,
+        "sliceIndex": 9
+      },
+      {
+        "x": 236,
+        "y": 255,
+        "sliceIndex": 9
+      },
+      {
+        "x": 235,
+        "y": 254,
+        "sliceIndex": 9
+      },
+      {
+        "x": 231,
+        "y": 254,
+        "sliceIndex": 9
+      },
+      {
+        "x": 230,
+        "y": 255,
+        "sliceIndex": 9
+      },
+      {
+        "x": 230,
+        "y": 258,
+        "sliceIndex": 9
+      },
+      {
+        "x": 229,
+        "y": 259,
+        "sliceIndex": 9
+      },
+      {
+        "x": 229,
+        "y": 260,
+        "sliceIndex": 9
+      },
+      {
+        "x": 228,
+        "y": 261,
+        "sliceIndex": 9
+      },
+      {
+        "x": 228,
+        "y": 262,
+        "sliceIndex": 9
+      },
+      {
+        "x": 227,
+        "y": 263,
+        "sliceIndex": 9
+      },
+      {
+        "x": 227,
+        "y": 265,
+        "sliceIndex": 9
+      },
+      {
+        "x": 226,
+        "y": 266,
+        "sliceIndex": 9
+      },
+      {
+        "x": 226,
+        "y": 269,
+        "sliceIndex": 9
+      },
+      {
+        "x": 225,
+        "y": 270,
+        "sliceIndex": 9
+      },
+      {
+        "x": 225,
+        "y": 276,
+        "sliceIndex": 9
+      },
+      {
+        "x": 226,
+        "y": 277,
+        "sliceIndex": 9
+      },
+      {
+        "x": 226,
+        "y": 278,
+        "sliceIndex": 9
+      },
+      {
+        "x": 231,
+        "y": 283,
+        "sliceIndex": 9
+      },
+      {
+        "x": 232,
+        "y": 283,
+        "sliceIndex": 9
+      },
+      {
+        "x": 233,
+        "y": 284,
+        "sliceIndex": 9
+      },
+      {
+        "x": 234,
+        "y": 284,
+        "sliceIndex": 9
+      },
+      {
+        "x": 235,
+        "y": 285,
+        "sliceIndex": 9
+      },
+      {
+        "x": 239,
+        "y": 285,
+        "sliceIndex": 9
+      },
+      {
+        "x": 240,
+        "y": 286,
+        "sliceIndex": 9
+      },
+      {
+        "x": 252,
+        "y": 286,
+        "sliceIndex": 9
+      },
+      {
+        "x": 253,
+        "y": 287,
+        "sliceIndex": 9
+      },
+      {
+        "x": 262,
+        "y": 287,
+        "sliceIndex": 9
+      },
+      {
+        "x": 263,
+        "y": 288,
+        "sliceIndex": 9
+      },
+      {
+        "x": 264,
+        "y": 288,
+        "sliceIndex": 9
+      },
+      {
+        "x": 266,
+        "y": 290,
+        "sliceIndex": 9
+      },
+      {
+        "x": 269,
+        "y": 290,
+        "sliceIndex": 9
+      },
+      {
+        "x": 270,
+        "y": 291,
+        "sliceIndex": 9
+      },
+      {
+        "x": 278,
+        "y": 291,
+        "sliceIndex": 9
+      },
+      {
+        "x": 279,
+        "y": 290,
+        "sliceIndex": 9
+      },
+      {
+        "x": 282,
+        "y": 290,
+        "sliceIndex": 9
+      },
+      {
+        "x": 284,
+        "y": 288,
+        "sliceIndex": 9
+      },
+      {
+        "x": 284,
+        "y": 287,
+        "sliceIndex": 9
+      },
+      {
+        "x": 285,
+        "y": 286,
+        "sliceIndex": 9
+      },
+      {
+        "x": 286,
+        "y": 286,
+        "sliceIndex": 9
+      },
+      {
+        "x": 288,
+        "y": 284,
+        "sliceIndex": 9
+      },
+      {
+        "x": 288,
+        "y": 282,
+        "sliceIndex": 9
+      },
+      {
+        "x": 289,
+        "y": 281,
+        "sliceIndex": 9
+      },
+      {
+        "x": 289,
+        "y": 277,
+        "sliceIndex": 9
+      },
+      {
+        "x": 290,
+        "y": 276,
+        "sliceIndex": 9
+      },
+      {
+        "x": 290,
+        "y": 275,
+        "sliceIndex": 9
+      },
+      {
+        "x": 291,
+        "y": 274,
+        "sliceIndex": 9
+      },
+      {
+        "x": 291,
+        "y": 273,
+        "sliceIndex": 9
+      },
+      {
+        "x": 292,
+        "y": 272,
+        "sliceIndex": 9
+      },
+      {
+        "x": 292,
+        "y": 271,
+        "sliceIndex": 9
+      },
+      {
+        "x": 293,
+        "y": 270,
+        "sliceIndex": 9
+      },
+      {
+        "x": 293,
+        "y": 268,
+        "sliceIndex": 9
+      },
+      {
+        "x": 294,
+        "y": 267,
+        "sliceIndex": 9
+      },
+      {
+        "x": 294,
+        "y": 266,
+        "sliceIndex": 9
+      },
+      {
+        "x": 295,
+        "y": 265,
+        "sliceIndex": 9
+      },
+      {
+        "x": 294,
+        "y": 264,
+        "sliceIndex": 9
+      },
+      {
+        "x": 294,
+        "y": 258,
+        "sliceIndex": 9
+      },
+      {
+        "x": 293,
+        "y": 257,
+        "sliceIndex": 9
+      },
+      {
+        "x": 293,
+        "y": 256,
+        "sliceIndex": 9
+      },
+      {
+        "x": 291,
+        "y": 254,
+        "sliceIndex": 9
+      },
+      {
+        "x": 287,
+        "y": 254,
+        "sliceIndex": 9
+      },
+      {
+        "x": 286,
+        "y": 253,
+        "sliceIndex": 9
+      },
+      {
+        "x": 285,
+        "y": 253,
+        "sliceIndex": 9
+      },
+      {
+        "x": 284,
+        "y": 252,
+        "sliceIndex": 9
+      },
+      {
+        "x": 283,
+        "y": 252,
+        "sliceIndex": 9
+      },
+      {
+        "x": 281,
+        "y": 250,
+        "sliceIndex": 9
+      },
+      {
+        "x": 280,
+        "y": 250,
+        "sliceIndex": 9
+      },
+      {
+        "x": 277,
+        "y": 247,
+        "sliceIndex": 9
+      },
+      {
+        "x": 277,
+        "y": 240,
+        "sliceIndex": 9
+      },
+      {
+        "x": 276,
+        "y": 239,
+        "sliceIndex": 9
+      },
+      {
+        "x": 276,
+        "y": 238,
+        "sliceIndex": 9
+      },
+      {
+        "x": 270,
+        "y": 232,
+        "sliceIndex": 9
+      },
+      {
+        "x": 269,
+        "y": 232,
+        "sliceIndex": 9
+      },
+      {
+        "x": 268,
+        "y": 231,
+        "sliceIndex": 9
+      }
+    ]
+  },
+  {
+    "id": "seg_10_0",
+    "seriesId": "S2",
+    "label": "Аденома гипофиза (nnU-Net 3D)",
+    "color": "#FF3B30",
+    "visibleByDefault": true,
+    "points": [
+      {
+        "x": 260,
+        "y": 228,
+        "sliceIndex": 10
+      },
+      {
+        "x": 259,
+        "y": 229,
+        "sliceIndex": 10
+      },
+      {
+        "x": 258,
+        "y": 229,
+        "sliceIndex": 10
+      },
+      {
+        "x": 257,
+        "y": 230,
+        "sliceIndex": 10
+      },
+      {
+        "x": 256,
+        "y": 230,
+        "sliceIndex": 10
+      },
+      {
+        "x": 253,
+        "y": 233,
+        "sliceIndex": 10
+      },
+      {
+        "x": 253,
+        "y": 234,
+        "sliceIndex": 10
+      },
+      {
+        "x": 252,
+        "y": 235,
+        "sliceIndex": 10
+      },
+      {
+        "x": 252,
+        "y": 236,
+        "sliceIndex": 10
+      },
+      {
+        "x": 251,
+        "y": 237,
+        "sliceIndex": 10
+      },
+      {
+        "x": 251,
+        "y": 239,
+        "sliceIndex": 10
+      },
+      {
+        "x": 250,
+        "y": 240,
+        "sliceIndex": 10
+      },
+      {
+        "x": 250,
+        "y": 241,
+        "sliceIndex": 10
+      },
+      {
+        "x": 249,
+        "y": 242,
+        "sliceIndex": 10
+      },
+      {
+        "x": 249,
+        "y": 251,
+        "sliceIndex": 10
+      },
+      {
+        "x": 248,
+        "y": 252,
+        "sliceIndex": 10
+      },
+      {
+        "x": 248,
+        "y": 253,
+        "sliceIndex": 10
+      },
+      {
+        "x": 245,
+        "y": 256,
+        "sliceIndex": 10
+      },
+      {
+        "x": 245,
+        "y": 257,
+        "sliceIndex": 10
+      },
+      {
+        "x": 243,
+        "y": 259,
+        "sliceIndex": 10
+      },
+      {
+        "x": 242,
+        "y": 259,
+        "sliceIndex": 10
+      },
+      {
+        "x": 241,
+        "y": 260,
+        "sliceIndex": 10
+      },
+      {
+        "x": 240,
+        "y": 260,
+        "sliceIndex": 10
+      },
+      {
+        "x": 239,
+        "y": 259,
+        "sliceIndex": 10
+      },
+      {
+        "x": 232,
+        "y": 259,
+        "sliceIndex": 10
+      },
+      {
+        "x": 230,
+        "y": 261,
+        "sliceIndex": 10
+      },
+      {
+        "x": 230,
+        "y": 262,
+        "sliceIndex": 10
+      },
+      {
+        "x": 229,
+        "y": 263,
+        "sliceIndex": 10
+      },
+      {
+        "x": 229,
+        "y": 264,
+        "sliceIndex": 10
+      },
+      {
+        "x": 228,
+        "y": 265,
+        "sliceIndex": 10
+      },
+      {
+        "x": 228,
+        "y": 268,
+        "sliceIndex": 10
+      },
+      {
+        "x": 226,
+        "y": 270,
+        "sliceIndex": 10
+      },
+      {
+        "x": 226,
+        "y": 273,
+        "sliceIndex": 10
+      },
+      {
+        "x": 225,
+        "y": 274,
+        "sliceIndex": 10
+      },
+      {
+        "x": 225,
+        "y": 278,
+        "sliceIndex": 10
+      },
+      {
+        "x": 231,
+        "y": 284,
+        "sliceIndex": 10
+      },
+      {
+        "x": 232,
+        "y": 284,
+        "sliceIndex": 10
+      },
+      {
+        "x": 233,
+        "y": 285,
+        "sliceIndex": 10
+      },
+      {
+        "x": 237,
+        "y": 285,
+        "sliceIndex": 10
+      },
+      {
+        "x": 238,
+        "y": 286,
+        "sliceIndex": 10
+      },
+      {
+        "x": 240,
+        "y": 286,
+        "sliceIndex": 10
+      },
+      {
+        "x": 241,
+        "y": 287,
+        "sliceIndex": 10
+      },
+      {
+        "x": 259,
+        "y": 287,
+        "sliceIndex": 10
+      },
+      {
+        "x": 260,
+        "y": 288,
+        "sliceIndex": 10
+      },
+      {
+        "x": 262,
+        "y": 288,
+        "sliceIndex": 10
+      },
+      {
+        "x": 263,
+        "y": 289,
+        "sliceIndex": 10
+      },
+      {
+        "x": 265,
+        "y": 289,
+        "sliceIndex": 10
+      },
+      {
+        "x": 266,
+        "y": 290,
+        "sliceIndex": 10
+      },
+      {
+        "x": 268,
+        "y": 290,
+        "sliceIndex": 10
+      },
+      {
+        "x": 269,
+        "y": 289,
+        "sliceIndex": 10
+      },
+      {
+        "x": 277,
+        "y": 289,
+        "sliceIndex": 10
+      },
+      {
+        "x": 278,
+        "y": 288,
+        "sliceIndex": 10
+      },
+      {
+        "x": 280,
+        "y": 288,
+        "sliceIndex": 10
+      },
+      {
+        "x": 281,
+        "y": 287,
+        "sliceIndex": 10
+      },
+      {
+        "x": 283,
+        "y": 287,
+        "sliceIndex": 10
+      },
+      {
+        "x": 284,
+        "y": 286,
+        "sliceIndex": 10
+      },
+      {
+        "x": 285,
+        "y": 286,
+        "sliceIndex": 10
+      },
+      {
+        "x": 286,
+        "y": 285,
+        "sliceIndex": 10
+      },
+      {
+        "x": 287,
+        "y": 285,
+        "sliceIndex": 10
+      },
+      {
+        "x": 288,
+        "y": 284,
+        "sliceIndex": 10
+      },
+      {
+        "x": 289,
+        "y": 284,
+        "sliceIndex": 10
+      },
+      {
+        "x": 290,
+        "y": 283,
+        "sliceIndex": 10
+      },
+      {
+        "x": 291,
+        "y": 283,
+        "sliceIndex": 10
+      },
+      {
+        "x": 291,
+        "y": 280,
+        "sliceIndex": 10
+      },
+      {
+        "x": 292,
+        "y": 279,
+        "sliceIndex": 10
+      },
+      {
+        "x": 292,
+        "y": 277,
+        "sliceIndex": 10
+      },
+      {
+        "x": 293,
+        "y": 276,
+        "sliceIndex": 10
+      },
+      {
+        "x": 293,
+        "y": 275,
+        "sliceIndex": 10
+      },
+      {
+        "x": 294,
+        "y": 274,
+        "sliceIndex": 10
+      },
+      {
+        "x": 294,
+        "y": 270,
+        "sliceIndex": 10
+      },
+      {
+        "x": 291,
+        "y": 267,
+        "sliceIndex": 10
+      },
+      {
+        "x": 291,
+        "y": 266,
+        "sliceIndex": 10
+      },
+      {
+        "x": 292,
+        "y": 265,
+        "sliceIndex": 10
+      },
+      {
+        "x": 292,
+        "y": 264,
+        "sliceIndex": 10
+      },
+      {
+        "x": 294,
+        "y": 262,
+        "sliceIndex": 10
+      },
+      {
+        "x": 294,
+        "y": 261,
+        "sliceIndex": 10
+      },
+      {
+        "x": 293,
+        "y": 260,
+        "sliceIndex": 10
+      },
+      {
+        "x": 293,
+        "y": 259,
+        "sliceIndex": 10
+      },
+      {
+        "x": 289,
+        "y": 259,
+        "sliceIndex": 10
+      },
+      {
+        "x": 288,
+        "y": 258,
+        "sliceIndex": 10
+      },
+      {
+        "x": 287,
+        "y": 258,
+        "sliceIndex": 10
+      },
+      {
+        "x": 285,
+        "y": 256,
+        "sliceIndex": 10
+      },
+      {
+        "x": 284,
+        "y": 256,
+        "sliceIndex": 10
+      },
+      {
+        "x": 280,
+        "y": 252,
+        "sliceIndex": 10
+      },
+      {
+        "x": 280,
+        "y": 249,
+        "sliceIndex": 10
+      },
+      {
+        "x": 279,
+        "y": 248,
+        "sliceIndex": 10
+      },
+      {
+        "x": 279,
+        "y": 245,
+        "sliceIndex": 10
+      },
+      {
+        "x": 280,
+        "y": 244,
+        "sliceIndex": 10
+      },
+      {
+        "x": 280,
+        "y": 239,
+        "sliceIndex": 10
+      },
+      {
+        "x": 279,
+        "y": 238,
+        "sliceIndex": 10
+      },
+      {
+        "x": 279,
+        "y": 237,
+        "sliceIndex": 10
+      },
+      {
+        "x": 278,
+        "y": 236,
+        "sliceIndex": 10
+      },
+      {
+        "x": 278,
+        "y": 232,
+        "sliceIndex": 10
+      },
+      {
+        "x": 276,
+        "y": 230,
+        "sliceIndex": 10
+      },
+      {
+        "x": 275,
+        "y": 230,
+        "sliceIndex": 10
+      },
+      {
+        "x": 274,
+        "y": 229,
+        "sliceIndex": 10
+      },
+      {
+        "x": 273,
+        "y": 229,
+        "sliceIndex": 10
+      },
+      {
+        "x": 272,
+        "y": 228,
+        "sliceIndex": 10
+      },
+      {
+        "x": 267,
+        "y": 228,
+        "sliceIndex": 10
+      },
+      {
+        "x": 266,
+        "y": 229,
+        "sliceIndex": 10
+      },
+      {
+        "x": 264,
+        "y": 229,
+        "sliceIndex": 10
+      },
+      {
+        "x": 263,
+        "y": 228,
+        "sliceIndex": 10
+      }
+    ]
+  },
+  {
+    "id": "seg_11_0",
+    "seriesId": "S2",
+    "label": "Аденома гипофиза (nnU-Net 3D)",
+    "color": "#FF3B30",
+    "visibleByDefault": true,
+    "points": [
+      {
+        "x": 263,
+        "y": 225,
+        "sliceIndex": 11
+      },
+      {
+        "x": 259,
+        "y": 229,
+        "sliceIndex": 11
+      },
+      {
+        "x": 258,
+        "y": 229,
+        "sliceIndex": 11
+      },
+      {
+        "x": 257,
+        "y": 230,
+        "sliceIndex": 11
+      },
+      {
+        "x": 255,
+        "y": 230,
+        "sliceIndex": 11
+      },
+      {
+        "x": 254,
+        "y": 231,
+        "sliceIndex": 11
+      },
+      {
+        "x": 253,
+        "y": 231,
+        "sliceIndex": 11
+      },
+      {
+        "x": 250,
+        "y": 234,
+        "sliceIndex": 11
+      },
+      {
+        "x": 250,
+        "y": 235,
+        "sliceIndex": 11
+      },
+      {
+        "x": 249,
+        "y": 236,
+        "sliceIndex": 11
+      },
+      {
+        "x": 249,
+        "y": 237,
+        "sliceIndex": 11
+      },
+      {
+        "x": 248,
+        "y": 238,
+        "sliceIndex": 11
+      },
+      {
+        "x": 248,
+        "y": 240,
+        "sliceIndex": 11
+      },
+      {
+        "x": 247,
+        "y": 241,
+        "sliceIndex": 11
+      },
+      {
+        "x": 247,
+        "y": 242,
+        "sliceIndex": 11
+      },
+      {
+        "x": 248,
+        "y": 243,
+        "sliceIndex": 11
+      },
+      {
+        "x": 248,
+        "y": 247,
+        "sliceIndex": 11
+      },
+      {
+        "x": 249,
+        "y": 248,
+        "sliceIndex": 11
+      },
+      {
+        "x": 249,
+        "y": 252,
+        "sliceIndex": 11
+      },
+      {
+        "x": 250,
+        "y": 253,
+        "sliceIndex": 11
+      },
+      {
+        "x": 250,
+        "y": 256,
+        "sliceIndex": 11
+      },
+      {
+        "x": 248,
+        "y": 258,
+        "sliceIndex": 11
+      },
+      {
+        "x": 248,
+        "y": 259,
+        "sliceIndex": 11
+      },
+      {
+        "x": 247,
+        "y": 260,
+        "sliceIndex": 11
+      },
+      {
+        "x": 246,
+        "y": 260,
+        "sliceIndex": 11
+      },
+      {
+        "x": 244,
+        "y": 262,
+        "sliceIndex": 11
+      },
+      {
+        "x": 243,
+        "y": 262,
+        "sliceIndex": 11
+      },
+      {
+        "x": 241,
+        "y": 264,
+        "sliceIndex": 11
+      },
+      {
+        "x": 234,
+        "y": 264,
+        "sliceIndex": 11
+      },
+      {
+        "x": 233,
+        "y": 265,
+        "sliceIndex": 11
+      },
+      {
+        "x": 232,
+        "y": 265,
+        "sliceIndex": 11
+      },
+      {
+        "x": 231,
+        "y": 266,
+        "sliceIndex": 11
+      },
+      {
+        "x": 230,
+        "y": 266,
+        "sliceIndex": 11
+      },
+      {
+        "x": 229,
+        "y": 267,
+        "sliceIndex": 11
+      },
+      {
+        "x": 229,
+        "y": 269,
+        "sliceIndex": 11
+      },
+      {
+        "x": 228,
+        "y": 270,
+        "sliceIndex": 11
+      },
+      {
+        "x": 228,
+        "y": 271,
+        "sliceIndex": 11
+      },
+      {
+        "x": 227,
+        "y": 272,
+        "sliceIndex": 11
+      },
+      {
+        "x": 227,
+        "y": 275,
+        "sliceIndex": 11
+      },
+      {
+        "x": 226,
+        "y": 276,
+        "sliceIndex": 11
+      },
+      {
+        "x": 226,
+        "y": 278,
+        "sliceIndex": 11
+      },
+      {
+        "x": 227,
+        "y": 279,
+        "sliceIndex": 11
+      },
+      {
+        "x": 227,
+        "y": 280,
+        "sliceIndex": 11
+      },
+      {
+        "x": 231,
+        "y": 284,
+        "sliceIndex": 11
+      },
+      {
+        "x": 232,
+        "y": 284,
+        "sliceIndex": 11
+      },
+      {
+        "x": 233,
+        "y": 285,
+        "sliceIndex": 11
+      },
+      {
+        "x": 235,
+        "y": 285,
+        "sliceIndex": 11
+      },
+      {
+        "x": 236,
+        "y": 286,
+        "sliceIndex": 11
+      },
+      {
+        "x": 240,
+        "y": 286,
+        "sliceIndex": 11
+      },
+      {
+        "x": 241,
+        "y": 287,
+        "sliceIndex": 11
+      },
+      {
+        "x": 242,
+        "y": 287,
+        "sliceIndex": 11
+      },
+      {
+        "x": 243,
+        "y": 288,
+        "sliceIndex": 11
+      },
+      {
+        "x": 244,
+        "y": 288,
+        "sliceIndex": 11
+      },
+      {
+        "x": 245,
+        "y": 289,
+        "sliceIndex": 11
+      },
+      {
+        "x": 251,
+        "y": 289,
+        "sliceIndex": 11
+      },
+      {
+        "x": 252,
+        "y": 288,
+        "sliceIndex": 11
+      },
+      {
+        "x": 261,
+        "y": 288,
+        "sliceIndex": 11
+      },
+      {
+        "x": 262,
+        "y": 287,
+        "sliceIndex": 11
+      },
+      {
+        "x": 275,
+        "y": 287,
+        "sliceIndex": 11
+      },
+      {
+        "x": 276,
+        "y": 286,
+        "sliceIndex": 11
+      },
+      {
+        "x": 277,
+        "y": 286,
+        "sliceIndex": 11
+      },
+      {
+        "x": 278,
+        "y": 285,
+        "sliceIndex": 11
+      },
+      {
+        "x": 282,
+        "y": 285,
+        "sliceIndex": 11
+      },
+      {
+        "x": 283,
+        "y": 284,
+        "sliceIndex": 11
+      },
+      {
+        "x": 284,
+        "y": 284,
+        "sliceIndex": 11
+      },
+      {
+        "x": 285,
+        "y": 283,
+        "sliceIndex": 11
+      },
+      {
+        "x": 286,
+        "y": 283,
+        "sliceIndex": 11
+      },
+      {
+        "x": 287,
+        "y": 282,
+        "sliceIndex": 11
+      },
+      {
+        "x": 288,
+        "y": 282,
+        "sliceIndex": 11
+      },
+      {
+        "x": 289,
+        "y": 281,
+        "sliceIndex": 11
+      },
+      {
+        "x": 289,
+        "y": 280,
+        "sliceIndex": 11
+      },
+      {
+        "x": 290,
+        "y": 279,
+        "sliceIndex": 11
+      },
+      {
+        "x": 290,
+        "y": 277,
+        "sliceIndex": 11
+      },
+      {
+        "x": 292,
+        "y": 275,
+        "sliceIndex": 11
+      },
+      {
+        "x": 292,
+        "y": 274,
+        "sliceIndex": 11
+      },
+      {
+        "x": 289,
+        "y": 271,
+        "sliceIndex": 11
+      },
+      {
+        "x": 290,
+        "y": 270,
+        "sliceIndex": 11
+      },
+      {
+        "x": 290,
+        "y": 266,
+        "sliceIndex": 11
+      },
+      {
+        "x": 291,
+        "y": 265,
+        "sliceIndex": 11
+      },
+      {
+        "x": 291,
+        "y": 264,
+        "sliceIndex": 11
+      },
+      {
+        "x": 289,
+        "y": 262,
+        "sliceIndex": 11
+      },
+      {
+        "x": 286,
+        "y": 262,
+        "sliceIndex": 11
+      },
+      {
+        "x": 285,
+        "y": 261,
+        "sliceIndex": 11
+      },
+      {
+        "x": 284,
+        "y": 261,
+        "sliceIndex": 11
+      },
+      {
+        "x": 283,
+        "y": 260,
+        "sliceIndex": 11
+      },
+      {
+        "x": 282,
+        "y": 260,
+        "sliceIndex": 11
+      },
+      {
+        "x": 281,
+        "y": 259,
+        "sliceIndex": 11
+      },
+      {
+        "x": 281,
+        "y": 258,
+        "sliceIndex": 11
+      },
+      {
+        "x": 278,
+        "y": 255,
+        "sliceIndex": 11
+      },
+      {
+        "x": 279,
+        "y": 254,
+        "sliceIndex": 11
+      },
+      {
+        "x": 279,
+        "y": 251,
+        "sliceIndex": 11
+      },
+      {
+        "x": 280,
+        "y": 250,
+        "sliceIndex": 11
+      },
+      {
+        "x": 280,
+        "y": 249,
+        "sliceIndex": 11
+      },
+      {
+        "x": 281,
+        "y": 248,
+        "sliceIndex": 11
+      },
+      {
+        "x": 281,
+        "y": 246,
+        "sliceIndex": 11
+      },
+      {
+        "x": 282,
+        "y": 245,
+        "sliceIndex": 11
+      },
+      {
+        "x": 282,
+        "y": 240,
+        "sliceIndex": 11
+      },
+      {
+        "x": 280,
+        "y": 238,
+        "sliceIndex": 11
+      },
+      {
+        "x": 280,
+        "y": 233,
+        "sliceIndex": 11
+      },
+      {
+        "x": 279,
+        "y": 232,
+        "sliceIndex": 11
+      },
+      {
+        "x": 279,
+        "y": 231,
+        "sliceIndex": 11
+      },
+      {
+        "x": 278,
+        "y": 230,
+        "sliceIndex": 11
+      },
+      {
+        "x": 277,
+        "y": 230,
+        "sliceIndex": 11
+      },
+      {
+        "x": 275,
+        "y": 228,
+        "sliceIndex": 11
+      },
+      {
+        "x": 274,
+        "y": 228,
+        "sliceIndex": 11
+      },
+      {
+        "x": 272,
+        "y": 226,
+        "sliceIndex": 11
+      },
+      {
+        "x": 265,
+        "y": 226,
+        "sliceIndex": 11
+      },
+      {
+        "x": 264,
+        "y": 225,
+        "sliceIndex": 11
+      }
+    ]
+  },
+  {
+    "id": "seg_12_0",
+    "seriesId": "S2",
+    "label": "Аденома гипофиза (nnU-Net 3D)",
+    "color": "#FF3B30",
+    "visibleByDefault": true,
+    "points": [
+      {
+        "x": 262,
+        "y": 225,
+        "sliceIndex": 12
+      },
+      {
+        "x": 261,
+        "y": 226,
+        "sliceIndex": 12
+      },
+      {
+        "x": 261,
+        "y": 227,
+        "sliceIndex": 12
+      },
+      {
+        "x": 259,
+        "y": 229,
+        "sliceIndex": 12
+      },
+      {
+        "x": 258,
+        "y": 229,
+        "sliceIndex": 12
+      },
+      {
+        "x": 253,
+        "y": 234,
+        "sliceIndex": 12
+      },
+      {
+        "x": 251,
+        "y": 234,
+        "sliceIndex": 12
+      },
+      {
+        "x": 250,
+        "y": 235,
+        "sliceIndex": 12
+      },
+      {
+        "x": 249,
+        "y": 235,
+        "sliceIndex": 12
+      },
+      {
+        "x": 247,
+        "y": 237,
+        "sliceIndex": 12
+      },
+      {
+        "x": 247,
+        "y": 245,
+        "sliceIndex": 12
+      },
+      {
+        "x": 248,
+        "y": 246,
+        "sliceIndex": 12
+      },
+      {
+        "x": 248,
+        "y": 247,
+        "sliceIndex": 12
+      },
+      {
+        "x": 249,
+        "y": 248,
+        "sliceIndex": 12
+      },
+      {
+        "x": 249,
+        "y": 249,
+        "sliceIndex": 12
+      },
+      {
+        "x": 250,
+        "y": 250,
+        "sliceIndex": 12
+      },
+      {
+        "x": 250,
+        "y": 251,
+        "sliceIndex": 12
+      },
+      {
+        "x": 251,
+        "y": 252,
+        "sliceIndex": 12
+      },
+      {
+        "x": 251,
+        "y": 253,
+        "sliceIndex": 12
+      },
+      {
+        "x": 253,
+        "y": 255,
+        "sliceIndex": 12
+      },
+      {
+        "x": 253,
+        "y": 256,
+        "sliceIndex": 12
+      },
+      {
+        "x": 254,
+        "y": 257,
+        "sliceIndex": 12
+      },
+      {
+        "x": 253,
+        "y": 258,
+        "sliceIndex": 12
+      },
+      {
+        "x": 253,
+        "y": 259,
+        "sliceIndex": 12
+      },
+      {
+        "x": 251,
+        "y": 261,
+        "sliceIndex": 12
+      },
+      {
+        "x": 250,
+        "y": 261,
+        "sliceIndex": 12
+      },
+      {
+        "x": 245,
+        "y": 266,
+        "sliceIndex": 12
+      },
+      {
+        "x": 245,
+        "y": 267,
+        "sliceIndex": 12
+      },
+      {
+        "x": 244,
+        "y": 268,
+        "sliceIndex": 12
+      },
+      {
+        "x": 243,
+        "y": 268,
+        "sliceIndex": 12
+      },
+      {
+        "x": 242,
+        "y": 269,
+        "sliceIndex": 12
+      },
+      {
+        "x": 241,
+        "y": 269,
+        "sliceIndex": 12
+      },
+      {
+        "x": 240,
+        "y": 270,
+        "sliceIndex": 12
+      },
+      {
+        "x": 237,
+        "y": 270,
+        "sliceIndex": 12
+      },
+      {
+        "x": 236,
+        "y": 271,
+        "sliceIndex": 12
+      },
+      {
+        "x": 232,
+        "y": 271,
+        "sliceIndex": 12
+      },
+      {
+        "x": 229,
+        "y": 274,
+        "sliceIndex": 12
+      },
+      {
+        "x": 229,
+        "y": 276,
+        "sliceIndex": 12
+      },
+      {
+        "x": 230,
+        "y": 277,
+        "sliceIndex": 12
+      },
+      {
+        "x": 230,
+        "y": 278,
+        "sliceIndex": 12
+      },
+      {
+        "x": 232,
+        "y": 280,
+        "sliceIndex": 12
+      },
+      {
+        "x": 232,
+        "y": 281,
+        "sliceIndex": 12
+      },
+      {
+        "x": 233,
+        "y": 282,
+        "sliceIndex": 12
+      },
+      {
+        "x": 233,
+        "y": 283,
+        "sliceIndex": 12
+      },
+      {
+        "x": 235,
+        "y": 285,
+        "sliceIndex": 12
+      },
+      {
+        "x": 240,
+        "y": 285,
+        "sliceIndex": 12
+      },
+      {
+        "x": 241,
+        "y": 286,
+        "sliceIndex": 12
+      },
+      {
+        "x": 244,
+        "y": 286,
+        "sliceIndex": 12
+      },
+      {
+        "x": 245,
+        "y": 287,
+        "sliceIndex": 12
+      },
+      {
+        "x": 247,
+        "y": 287,
+        "sliceIndex": 12
+      },
+      {
+        "x": 248,
+        "y": 288,
+        "sliceIndex": 12
+      },
+      {
+        "x": 250,
+        "y": 288,
+        "sliceIndex": 12
+      },
+      {
+        "x": 251,
+        "y": 287,
+        "sliceIndex": 12
+      },
+      {
+        "x": 253,
+        "y": 287,
+        "sliceIndex": 12
+      },
+      {
+        "x": 254,
+        "y": 286,
+        "sliceIndex": 12
+      },
+      {
+        "x": 255,
+        "y": 286,
+        "sliceIndex": 12
+      },
+      {
+        "x": 256,
+        "y": 287,
+        "sliceIndex": 12
+      },
+      {
+        "x": 258,
+        "y": 287,
+        "sliceIndex": 12
+      },
+      {
+        "x": 259,
+        "y": 288,
+        "sliceIndex": 12
+      },
+      {
+        "x": 267,
+        "y": 288,
+        "sliceIndex": 12
+      },
+      {
+        "x": 271,
+        "y": 284,
+        "sliceIndex": 12
+      },
+      {
+        "x": 272,
+        "y": 284,
+        "sliceIndex": 12
+      },
+      {
+        "x": 273,
+        "y": 283,
+        "sliceIndex": 12
+      },
+      {
+        "x": 274,
+        "y": 283,
+        "sliceIndex": 12
+      },
+      {
+        "x": 275,
+        "y": 282,
+        "sliceIndex": 12
+      },
+      {
+        "x": 278,
+        "y": 282,
+        "sliceIndex": 12
+      },
+      {
+        "x": 279,
+        "y": 281,
+        "sliceIndex": 12
+      },
+      {
+        "x": 281,
+        "y": 281,
+        "sliceIndex": 12
+      },
+      {
+        "x": 282,
+        "y": 280,
+        "sliceIndex": 12
+      },
+      {
+        "x": 284,
+        "y": 280,
+        "sliceIndex": 12
+      },
+      {
+        "x": 285,
+        "y": 279,
+        "sliceIndex": 12
+      },
+      {
+        "x": 287,
+        "y": 279,
+        "sliceIndex": 12
+      },
+      {
+        "x": 288,
+        "y": 278,
+        "sliceIndex": 12
+      },
+      {
+        "x": 289,
+        "y": 278,
+        "sliceIndex": 12
+      },
+      {
+        "x": 289,
+        "y": 275,
+        "sliceIndex": 12
+      },
+      {
+        "x": 291,
+        "y": 273,
+        "sliceIndex": 12
+      },
+      {
+        "x": 291,
+        "y": 272,
+        "sliceIndex": 12
+      },
+      {
+        "x": 289,
+        "y": 270,
+        "sliceIndex": 12
+      },
+      {
+        "x": 288,
+        "y": 270,
+        "sliceIndex": 12
+      },
+      {
+        "x": 285,
+        "y": 267,
+        "sliceIndex": 12
+      },
+      {
+        "x": 285,
+        "y": 266,
+        "sliceIndex": 12
+      },
+      {
+        "x": 281,
+        "y": 262,
+        "sliceIndex": 12
+      },
+      {
+        "x": 280,
+        "y": 262,
+        "sliceIndex": 12
+      },
+      {
+        "x": 278,
+        "y": 260,
+        "sliceIndex": 12
+      },
+      {
+        "x": 277,
+        "y": 260,
+        "sliceIndex": 12
+      },
+      {
+        "x": 275,
+        "y": 258,
+        "sliceIndex": 12
+      },
+      {
+        "x": 275,
+        "y": 257,
+        "sliceIndex": 12
+      },
+      {
+        "x": 276,
+        "y": 256,
+        "sliceIndex": 12
+      },
+      {
+        "x": 276,
+        "y": 254,
+        "sliceIndex": 12
+      },
+      {
+        "x": 279,
+        "y": 251,
+        "sliceIndex": 12
+      },
+      {
+        "x": 279,
+        "y": 250,
+        "sliceIndex": 12
+      },
+      {
+        "x": 280,
+        "y": 249,
+        "sliceIndex": 12
+      },
+      {
+        "x": 280,
+        "y": 248,
+        "sliceIndex": 12
+      },
+      {
+        "x": 281,
+        "y": 247,
+        "sliceIndex": 12
+      },
+      {
+        "x": 281,
+        "y": 240,
+        "sliceIndex": 12
+      },
+      {
+        "x": 280,
+        "y": 239,
+        "sliceIndex": 12
+      },
+      {
+        "x": 280,
+        "y": 236,
+        "sliceIndex": 12
+      },
+      {
+        "x": 279,
+        "y": 235,
+        "sliceIndex": 12
+      },
+      {
+        "x": 280,
+        "y": 234,
+        "sliceIndex": 12
+      },
+      {
+        "x": 280,
+        "y": 232,
+        "sliceIndex": 12
+      },
+      {
+        "x": 278,
+        "y": 230,
+        "sliceIndex": 12
+      },
+      {
+        "x": 277,
+        "y": 230,
+        "sliceIndex": 12
+      },
+      {
+        "x": 276,
+        "y": 229,
+        "sliceIndex": 12
+      },
+      {
+        "x": 274,
+        "y": 229,
+        "sliceIndex": 12
+      },
+      {
+        "x": 273,
+        "y": 228,
+        "sliceIndex": 12
+      },
+      {
+        "x": 272,
+        "y": 228,
+        "sliceIndex": 12
+      },
+      {
+        "x": 271,
+        "y": 227,
+        "sliceIndex": 12
+      },
+      {
+        "x": 268,
+        "y": 227,
+        "sliceIndex": 12
+      },
+      {
+        "x": 267,
+        "y": 226,
+        "sliceIndex": 12
+      },
+      {
+        "x": 265,
+        "y": 226,
+        "sliceIndex": 12
+      },
+      {
+        "x": 264,
+        "y": 225,
+        "sliceIndex": 12
+      }
+    ]
+  }
+]

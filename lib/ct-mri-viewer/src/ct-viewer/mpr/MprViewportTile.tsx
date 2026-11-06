@@ -4,6 +4,7 @@ import { useState, useEffect, useRef, useMemo, type CSSProperties } from "react"
 import type { PlaneKey } from "../../viewer/constants";
 import type { MprSlotState } from "../../viewer/types";
 import type { ViewportId } from "../../viewer/constants";
+import type { CtSegmentConfig } from "../../types";
 import segmentsData from "./segments.json";
 
 type Props = {
@@ -15,12 +16,72 @@ type Props = {
   gridStyle?: CSSProperties;
   stacked?: boolean;
   stackActive?: boolean;
+  segments?: CtSegmentConfig[];
+  sliceUrls?: string[];
 };
 
 interface Point3D {
   x: number;
   y: number;
   z: number;
+}
+
+function ServerSliceCanvas({ src, alt }: { src: string; alt: string }) {
+  const canvasRef = useRef<HTMLCanvasElement>(null);
+
+  useEffect(() => {
+    const img = new Image();
+    img.crossOrigin = "anonymous";
+    img.onload = () => {
+      const canvas = canvasRef.current;
+      if (!canvas) return;
+      canvas.width = img.naturalWidth || 512;
+      canvas.height = img.naturalHeight || 512;
+      const ctx = canvas.getContext("2d");
+      if (!ctx) return;
+      ctx.drawImage(img, 0, 0);
+
+      try {
+        const imgData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+        const data = imgData.data;
+        let maxVal = 0;
+        for (let i = 0; i < data.length; i += 4) {
+          if (data[i] > maxVal) maxVal = data[i];
+        }
+        // If 16-bit PNG is decoded into low 8-bit dynamic range (0..35)
+        if (maxVal > 0 && maxVal < 180) {
+          const scale = 255 / maxVal;
+          for (let i = 0; i < data.length; i += 4) {
+            data[i] = Math.min(255, Math.round(data[i] * scale));
+            data[i + 1] = Math.min(255, Math.round(data[i + 1] * scale));
+            data[i + 2] = Math.min(255, Math.round(data[i + 2] * scale));
+          }
+          ctx.putImageData(imgData, 0, 0);
+        }
+      } catch {}
+    };
+    img.src = src;
+  }, [src]);
+
+  return (
+    <canvas
+      ref={canvasRef}
+      width={512}
+      height={512}
+      aria-label={alt}
+      style={{
+        position: "absolute",
+        inset: 0,
+        width: "100%",
+        height: "100%",
+        objectFit: "contain",
+        backgroundColor: "#000",
+        zIndex: 2,
+        userSelect: "none",
+        pointerEvents: "none",
+      }}
+    />
+  );
 }
 
 export function MprViewportTile({
@@ -32,8 +93,11 @@ export function MprViewportTile({
   gridStyle,
   stacked,
   stackActive,
+  segments,
+  sliceUrls,
 }: Props) {
-  const isEmpty = !slot?.seriesId;
+  const hasCustomSlices = Boolean(sliceUrls && sliceUrls.length > 0);
+  const isEmpty = !slot?.seriesId && !hasCustomSlices;
   const [showAiContour, setShowAiContour] = useState(true);
   const containerRef = useRef<HTMLDivElement>(null);
 
@@ -44,9 +108,46 @@ export function MprViewportTile({
   const isAxial = planeStr.includes("axial") || vpStr.includes("axial");
   const isSagittal = planeStr.includes("sagittal") || vpStr.includes("sagittal");
 
-  const maxSlices = isAxial ? 18 : 14;
-  const initialSlice = isAxial ? 9 : (isSagittal ? 7 : 8);
+  const maxSlices = isCoronal && hasCustomSlices ? sliceUrls!.length : (isAxial ? 18 : 14);
+  const initialSlice = isCoronal && hasCustomSlices
+    ? Math.floor(sliceUrls!.length / 2)
+    : (isAxial ? 9 : (isSagittal ? 7 : 8));
   const [currentSlice, setCurrentSlice] = useState(initialSlice);
+
+  const prevFirstUrlRef = useRef<string | undefined>(undefined);
+  const hadSegmentsRef = useRef<boolean>(false);
+
+  useEffect(() => {
+    if (!hasCustomSlices || !isCoronal || !sliceUrls || sliceUrls.length === 0) return;
+
+    const firstUrl = sliceUrls[0];
+    const studyChanged = firstUrl !== prevFirstUrlRef.current;
+    const hasSegsNow = Boolean(segments && segments.some((s) => s.points && s.points.length > 0));
+    const segsJustArrived = hasSegsNow && !hadSegmentsRef.current;
+
+    prevFirstUrlRef.current = firstUrl;
+    hadSegmentsRef.current = hasSegsNow;
+
+    if (studyChanged || segsJustArrived) {
+      if (hasSegsNow && segments) {
+        const segSlices = Array.from(
+          new Set(segments.flatMap((s) => (s.points || []).map((p) => p.sliceIndex ?? 0)))
+        ).sort((a, b) => a - b);
+        if (segSlices.length > 0) {
+          const midSlice = segSlices[Math.floor(segSlices.length / 2)];
+          setCurrentSlice((prev) =>
+            !studyChanged && segSlices.includes(prev)
+              ? prev
+              : Math.max(0, Math.min(sliceUrls.length - 1, midSlice))
+          );
+          return;
+        }
+      }
+      if (studyChanged) {
+        setCurrentSlice(Math.floor(sliceUrls.length / 2));
+      }
+    }
+  }, [hasCustomSlices, isCoronal, sliceUrls, segments]);
 
   // Скролл колесиком мыши синхронизирован для каждого окна
   useEffect(() => {
@@ -67,21 +168,25 @@ export function MprViewportTile({
   }, [maxSlices]);
 
   // --------------------------------------------------------------------------
-  // МАТЕМАТИЧЕСКАЯ ИНТЕРПОЛЯЦИЯ 3D-ТОЧЕК ИЗ JSON
+  // МАТЕМАТИЧЕСКАЯ ИНТЕРПОЛЯЦИЯ 3D-ТОЧЕК ИЗ JSON / СЕРВЕРА
   // --------------------------------------------------------------------------
+  const activeSegments = segments ?? segmentsData;
+
   const activePolygon = useMemo(() => {
-    // 1. КОРОНАЛЬНАЯ ПЛОСКОСТЬ: берем полигон из JSON по номеру среза (3..12)
+    // 1. КОРОНАЛЬНАЯ ПЛОСКОСТЬ: берем полигон из activeSegments по номеру среза
     if (isCoronal) {
-      const seg = segmentsData.find((s: any) => s.points[0]?.sliceIndex === currentSlice);
+      const seg = activeSegments.find((s: any) => s.points?.some((p: any) => p.sliceIndex === currentSlice));
       if (!seg || !seg.points || seg.points.length === 0) return null;
-      return seg.points.map((p: any) => `${p.x},${p.y}`).join(" ");
+      const pts = seg.points.filter((p: any) => p.sliceIndex === currentSlice);
+      const pointsToMap = pts.length > 0 ? pts : seg.points;
+      return pointsToMap.map((p: any) => `${p.x},${p.y}`).join(" ");
     }
 
-    // Собираем все 3D-точки из JSON
+    // Собираем все 3D-точки
     const allPoints: Point3D[] = [];
-    segmentsData.forEach((s: any) => {
-      s.points.forEach((p: any) => {
-        allPoints.push({ x: p.x, y: p.y, z: p.sliceIndex });
+    activeSegments.forEach((s: any) => {
+      s.points?.forEach((p: any) => {
+        allPoints.push({ x: p.x, y: p.y, z: p.sliceIndex ?? 0 });
       });
     });
 
@@ -165,7 +270,7 @@ export function MprViewportTile({
     }
 
     return null;
-  }, [isCoronal, isAxial, isSagittal, currentSlice]);
+  }, [isCoronal, isAxial, isSagittal, currentSlice, activeSegments]);
 
   const planeName = isCoronal ? "Корональный" : isAxial ? "Аксиальный" : "Сагиттальный";
 
@@ -236,13 +341,22 @@ export function MprViewportTile({
           </div>
         )}
 
+        {/* Прямой рендеринг среза изображения с сервера с авто-выравниванием контраста */}
+        {hasCustomSlices && isCoronal && sliceUrls?.[currentSlice] && (
+          <ServerSliceCanvas
+            src={sliceUrls[currentSlice]}
+            alt={`Срез ${currentSlice + 1}`}
+          />
+        )}
+
         {/* ============================================================= */}
-        {/* ДИНАМИЧЕСКИЙ AI СЛОЙ ИЗ SEGMENTS.JSON ДЛЯ ВСЕХ 3 ПЛОСКОСТЕЙ  */}
+        {/* ДИНАМИЧЕСКИЙ AI СЛОЙ ДЛЯ ВСЕХ 3 ПЛОСКОСТЕЙ                    */}
         {/* ============================================================= */}
         {!isEmpty && showAiContour && (
           <>
             <svg
               viewBox="0 0 512 512"
+              preserveAspectRatio="xMidYMid meet"
               style={{
                 position: "absolute",
                 inset: 0,
@@ -291,7 +405,7 @@ export function MprViewportTile({
                 }}
               />
               <span>
-                {planeName} {currentSlice}/{maxSlices - 1} {activePolygon ? "" : ""}
+                {planeName} {currentSlice + 1}/{maxSlices}
               </span>
               <button
                 type="button"

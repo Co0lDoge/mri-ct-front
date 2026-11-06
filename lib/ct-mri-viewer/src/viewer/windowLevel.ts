@@ -5,7 +5,7 @@ export type VoiPolicyConfig = Pick<CtViewerConfig, "modality" | "defaultWindow">
 
 const DEFAULT_WINDOW: Record<string, [number, number]> = {
   CT: [40, 400],
-  MR: [400, 800],
+  MR: [1500, 3000],
 };
 
 /**
@@ -37,12 +37,16 @@ export function voiRangeFromImage(image: ImageWithVoi | undefined, policy: VoiPo
   if (!image) {
     return getWindowRangeFromConfig(policy);
   }
+  const defaultW =
+    policy.defaultWindow ??
+    (policy.modality === "MR" ? DEFAULT_WINDOW.MR : [PREVIEW_MATCH_FALLBACK_WC, PREVIEW_MATCH_FALLBACK_WW]);
+
   const wc = Array.isArray(image.windowCenter)
     ? image.windowCenter[0]
-    : (image.windowCenter ?? PREVIEW_MATCH_FALLBACK_WC);
+    : (image.windowCenter ?? defaultW[0]);
   const ww = Array.isArray(image.windowWidth)
     ? image.windowWidth[0]
-    : (image.windowWidth ?? PREVIEW_MATCH_FALLBACK_WW);
+    : (image.windowWidth ?? defaultW[1]);
   return [wc - ww / 2, wc + ww / 2];
 }
 

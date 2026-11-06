@@ -31,6 +31,33 @@ export type SeriesGroupConfig = {
   seriesIds: string[];
 };
 
+export type CtSegmentPoint = {
+  /** Координаты в пикселях внутри среза */
+  x: number;
+  y: number;
+  /** Индекс среза (если сегмент 3D — можно дублировать точки на разных срезах) */
+  sliceIndex?: number;
+  /** Мировые координаты (опционально) */
+  worldX?: number;
+  worldY?: number;
+  worldZ?: number;
+};
+
+export type CtSegmentConfig = {
+  /** ID сегмента (ключ для UI и логики) */
+  id: string;
+  /** К какой серии относится сегмент */
+  seriesId: string;
+  /** Подпись в UI */
+  label?: string;
+  /** Цвет сегмента (hex), если не задан — дефолтный */
+  color?: string;
+  /** Видимость по умолчанию */
+  visibleByDefault?: boolean;
+  /** Набор координат сегмента (точки/вершины контура и т.п.) */
+  points: CtSegmentPoint[];
+};
+
 export type CtViewerConfig = {
   /** Полный базовый URL к данным */
   baseUrl?: string;
@@ -50,4 +77,8 @@ export type CtViewerConfig = {
   enableCrosshairs?: boolean;
   /** Встроенный режим внутри карточки платформы */
   embedded?: boolean;
+  /** Список сегментов для отображения */
+  segments?: CtSegmentConfig[];
+  /** Прямые URL к срезам (например, с сервера) */
+  sliceUrls?: string[];
 };

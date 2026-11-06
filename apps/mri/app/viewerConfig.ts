@@ -16,4 +16,5 @@ export const defaultViewerConfig: CtViewerConfig = {
   ],
   initialSeriesId: "G_MRI_3PLANE",
   modality: "MR",
+  defaultWindow: [1500, 3000],
 };

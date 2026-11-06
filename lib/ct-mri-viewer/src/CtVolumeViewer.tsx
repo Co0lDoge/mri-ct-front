@@ -1,34 +1,9 @@
 "use client";
-import type { CtViewerConfig, SeriesConfig, SeriesGroupConfig } from "./types";
+import type { CtViewerConfig, SeriesConfig, SeriesGroupConfig, CtSegmentConfig, CtSegmentPoint } from "./types";
 import type { CtLayoutId } from "./layout";
 import { CtViewer } from "./ct-viewer/CtViewer";
 
-export type CtSegmentPoint = {
-  /** Координаты в пикселях внутри среза */
-  x: number;
-  y: number;
-  /** Индекс среза (если сегмент 3D — можно дублировать точки на разных срезах) */
-  sliceIndex?: number;
-  /** Мировые координаты (опционально, на будущее) */
-  worldX?: number;
-  worldY?: number;
-  worldZ?: number;
-};
-
-export type CtSegmentConfig = {
-  /** ID сегмента (ключ для UI и логики) */
-  id: string;
-  /** К какой серии относится сегмент */
-  seriesId: string;
-  /** Подпись в UI */
-  label?: string;
-  /** Цвет сегмента (hex), если не задан — дефолтный */
-  color?: string;
-  /** Видимость по умолчанию */
-  visibleByDefault?: boolean;
-  /** Набор координат сегмента (точки/вершины контура и т.п.) */
-  points: CtSegmentPoint[];
-};
+export type { CtSegmentConfig, CtSegmentPoint };
 
 export type CtVolumeViewerProps = {
   /** Полный базовый URL к данным, например "https://example.com/pacs/ID1/P1/E1". Если не задан, используется window.location.origin + pacsBasePath */
@@ -57,6 +32,8 @@ export type CtVolumeViewerProps = {
   embedded?: boolean;
   /** Список сегментов для отображения */
   segments?: CtSegmentConfig[];
+  /** Прямые URL к срезам (например, с сервера) */
+  sliceUrls?: string[];
   /** Коллбек при ошибках загрузки/инициализации */
   onError?(message: string): void;
   /** Изменение выбранного вьюпорта */
@@ -74,6 +51,8 @@ export function CtVolumeViewer(props: CtVolumeViewerProps) {
     defaultWindow,
     enableCrosshairs,
     embedded,
+    segments,
+    sliceUrls,
   } = props;
 
   const config: CtViewerConfig = {
@@ -86,6 +65,8 @@ export function CtVolumeViewer(props: CtVolumeViewerProps) {
     defaultWindow,
     enableCrosshairs,
     embedded,
+    segments,
+    sliceUrls,
   };
 
   // Пока что всё поведение реализовано внутри CtViewer,

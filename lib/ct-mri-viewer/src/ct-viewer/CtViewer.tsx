@@ -479,6 +479,8 @@ export function CtViewer({ config }: CtViewerProps) {
               layout={layout}
               slots={slots}
               singleProjection={singleProjection}
+              segments={config.segments}
+              sliceUrls={config.sliceUrls}
             />
           </div>
         </div>

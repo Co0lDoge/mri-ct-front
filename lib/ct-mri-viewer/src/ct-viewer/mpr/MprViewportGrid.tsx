@@ -3,6 +3,7 @@
 import type { Ref } from "react";
 import type { CtLayoutId } from "../../layout";
 import type { MprSlotState } from "../../viewer/types";
+import type { CtSegmentConfig } from "../../types";
 import { PLANES, PLANE_TO_ORIENTATION, PLANE_TO_VIEWPORT_ID, VIEWPORT_MIN_SIZE_PX } from "../../viewer/constants";
 import { outerGridStyleForLayout, cellPlacementForPlane } from "../../viewer/multiLayoutGrid";
 import { MprViewportTile } from "./MprViewportTile";
@@ -14,6 +15,8 @@ type Props = {
   singleProjection: 0 | 1 | 2;
   /** Только сетка окон — для ResizeObserver после смены раскладки */
   gridRootRef?: Ref<HTMLDivElement>;
+  segments?: CtSegmentConfig[];
+  sliceUrls?: string[];
 };
 
 /**
@@ -21,7 +24,7 @@ type Props = {
  * Режим «1»: те же узлы `[data-viewport]`, те же родители — все три плитки в одной grid-ячейке (перекрытие),
  * без обёртки и репарента: иначе RenderingEngine теряет связь с canvas и даёт чёрный экран.
  */
-export function MprViewportGrid({ layout, slots, singleProjection, gridRootRef }: Props) {
+export function MprViewportGrid({ layout, slots, singleProjection, gridRootRef, segments, sliceUrls }: Props) {
   const minH = VIEWPORT_MIN_SIZE_PX;
   const gridStyle = outerGridStyleForLayout(layout, minH);
 
@@ -47,6 +50,8 @@ export function MprViewportGrid({ layout, slots, singleProjection, gridRootRef }
             gridStyle={cellStyle}
             stacked={isSingle}
             stackActive={stackActive}
+            segments={segments}
+            sliceUrls={sliceUrls}
           />
         );
       })}
